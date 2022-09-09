@@ -46,7 +46,13 @@ div{
 }
 
 #start-btn{
-  background-color: rgb(147, 110, 147);
+  background-color: rgb(50, 194, 93);
+  margin:20px;
+}
+
+#start-link{
+  text-decoration: none;
+  color:white;
 }
 
 section.board div{

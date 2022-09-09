@@ -12,9 +12,9 @@ body{
 
 .board{
   display: grid;
-  grid-template-columns: repeat(7,50px);
-  grid-template-rows: repeat(6,50px);
-  margin:30px;
+  grid-template-columns: repeat(7,30px);
+  grid-template-rows: repeat(6,30px);
+  margin:10px;
 }
 
 .square{

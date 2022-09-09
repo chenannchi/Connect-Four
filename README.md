@@ -22,3 +22,8 @@ Technologies used in this game: HTML, CSS, JS.
 - **Next Steps**: Planned future enhancements (icebox items).
 
 Next Steps: 
+
+- **credential**:
+icons from [ICONS8](https://icons8.com/)
+
+music from [PIXABAY](https://pixabay.com/)

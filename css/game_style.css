@@ -12,15 +12,27 @@ body{
 
 .board{
   display: grid;
-  grid-template-columns: repeat(7,30px);
-  grid-template-rows: repeat(6,30px);
+  grid-template-columns: repeat(7,60px);
+  grid-template-rows: repeat(6,60px);
   margin:10px;
 }
 
-.square{
+.player1{
+  border:black 2px solid;
+  margin:2px;
+  background-color: lightseagreen;
+}
+
+.player2{
   border:black 2px solid;
   margin:2px;
   background-color: lightcoral;
+}
+
+.blank{
+  border:black 2px solid;
+  margin:2px;
+  background-color: lightgray;
 }
 
 #btns{

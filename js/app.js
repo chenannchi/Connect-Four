@@ -56,6 +56,8 @@ document.getElementById("paint-palette").addEventListener("click",function(){
   console.log("paint palette clicked")
 })
 
+boardEl.addEventListener("click", handleClick)
+
 
 /*-------------------------------- Functions --------------------------------*/
 init()
@@ -100,17 +102,20 @@ function render(){
 }
 
 function handleClick(evt){
-  const sqIdx = parseInt(evt.target.id[evt.target.id.length-1])
+  const sqRowIdx = parseInt(evt.target.id[evt.target.id.length-2])
 
-  if(board[sqIdx]){
+  const sqColIdx = parseInt(evt.target.id[evt.target.id.length-1])
+
+  if(board[sqRowIdx][sqColIdx]){
     return 
   }else if (winner!==null){
     return
   }
 
-  board[sqIdx] = turn
+  board[sqRowIdx][sqColIdx] = turn
   turn *= -1
   winner = getWinner()
   render()
 }
+
 

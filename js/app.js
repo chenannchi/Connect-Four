@@ -67,19 +67,10 @@ function init() {
   for (let i = 0; i < 6; i++) {
     board[i] = new Array(7).fill(null)
   }
-  // console.log(board)
 
-  // for(let i = 0; i < rows;i++){
-  //   for(let j = 0; j < cols;j++){
-  //     squareEls[i][j].textContent = ""
-  //   }
-  // }
-
-  // board.forEach(ele, rowIdx=>{
-  //   ele.forEach(sq, colIdx=>{
-  //     squareEls[rowIdx][colIdx].textContent = ""
-  //   })
-  // })
+  for(let i = 0;i < 42;i++){
+    squareEls[i].textContent = ""
+  }
 
   turn = 1
   winner = null
@@ -94,11 +85,9 @@ function render() {
       let idxOfSq = rowIdx * 7 + colIdx
       if (board[rowIdx][colIdx] === 1) {
         // console.log(squareEls[idxOfSq])
-        // Restart要將圖片清空
         squareEls[idxOfSq].setAttribute("class", "player1")
         squareEls[idxOfSq].innerHTML = chimmy
       } else if (board[rowIdx][colIdx] === -1) {
-        squ
         squareEls[idxOfSq].setAttribute("class", "player2")
         squareEls[idxOfSq].innerHTML = shooky
       } else {

@@ -10,6 +10,7 @@ body{
 		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+
 .board{
   display: grid;
   grid-template-columns: repeat(7,60px);

@@ -73,15 +73,15 @@ function init() {
 function render() {
   board.forEach(function (col, colIdx) {
     col.forEach(function (square, rowIdx) {
+      let selectSqEl = document.querySelector(`#sq${rowIdx}${colIdx}`)
       if (square === 1) {
-        console.log(document.querySelector(`#sq${rowIdx}${colIdx}`))
-        document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("player1")
-        document.querySelector(`#sq${rowIdx}${colIdx}`).innerHTML = chimmy
+        selectSqEl.classList.add("player1")
+        selectSqEl.innerHTML = chimmy
       } else if (square === -1) {
-        document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("player2")
-        document.querySelector(`#sq${rowIdx}${colIdx}`).innerHTML = shooky
+        selectSqEl.classList.add("player2")
+        selectSqEl.innerHTML = shooky
       } else {
-        document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("blank")
+        selectSqEl.classList.add("blank")
       }
     })
   });

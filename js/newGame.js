@@ -13,7 +13,7 @@ let board, turn, winner, themeColor
 let playing = 0
 
 /*------------------------ Cached Element References ------------------------*/
-let boardEl = document.querySelector("#game-board")
+let boardEl = document.querySelector(".board")
 let hintMsg = document.querySelector("#hint-msg")
 let squareEls = document.querySelectorAll(".square")
 let startBtn = document.querySelector("#start-btn")
@@ -30,32 +30,36 @@ let audioBtn = document.getElementById("audio")
 // console.log(homeBtn)
 
 /*----------------------------- Event Listeners -----------------------------*/
-document.getElementById("timer").addEventListener("click", function () {
-  console.log("timer clicked")
-})
+// document.getElementById("timer").addEventListener("click", function () {
+//   console.log("timer clicked")
+// })
 
-audioBtn.addEventListener("click", function (evt) {
-  // console.log("audio clicked")
-  // console.log(playing)
-  if (!playing) {
-    console.log("start-playing")
-    music.volume = 0.1
-    music.play()
-    audioBtn.setAttribute("src", "/assets/audio.png")
-    playing = 1
-  } else {
-    console.log("stop playing")
-    music.pause()
-    audioBtn.setAttribute("src", "/assets/no-audio.png")
-    playing = 0
-  }
-})
+// audioBtn.addEventListener("click", function (evt) {
+//   // console.log("audio clicked")
+//   // console.log(playing)
+//   if (!playing) {
+//     console.log("start-playing")
+//     music.volume = 0.1
+//     music.play()
+//     audioBtn.setAttribute("src", "/assets/audio.png")
+//     playing = 1
+//   } else {
+//     console.log("stop playing")
+//     music.pause()
+//     audioBtn.setAttribute("src", "/assets/no-audio.png")
+//     playing = 0
+//   }
+// })
 
-document.getElementById("paint-palette").addEventListener("click", function () {
-  console.log("paint palette clicked")
-})
+// document.getElementById("paint-palette").addEventListener("click", function () {
+//   console.log("paint palette clicked")
+// })
 
 boardEl.addEventListener("click", handleClick)
+
+for(let i = 0;i < 7;i++){
+
+}
 
 restartBtn.addEventListener("click", init)
 
@@ -66,10 +70,13 @@ init()
 
 function init() {
   // console.log("Init involked")
-  board = new Array(6).fill(null)
-  for (let i = 0; i < 6; i++) {
-    board[i] = new Array(7).fill(null)
+  // save data by columns
+  board = new Array(7).fill(null)
+  for (let i = 0; i < 7; i++) {
+    board[i] = new Array(6).fill(null)
   }
+
+  console.log("board",board)
 
   for(let i = 0;i < 42;i++){
     squareEls[i].textContent = ""
@@ -80,21 +87,25 @@ function init() {
   render()
 }
 
+console.log("board",board)
 function render() {
-  board.forEach(function (row, rowIdx) {
-    row.forEach(function (square, colIdx) {
-      // console.log(rowIdx)
-      // console.log(colIdx)
-      let idxOfSq = rowIdx * 7 + colIdx
-      if (board[rowIdx][colIdx] === 1) {
+  board.forEach(function (col, colIdx) {
+    col.forEach(function (square, rowIdx) {
+      console.log(rowIdx)
+      console.log(colIdx)
+      // let idxOfSq = rowIdx * 7 + colIdx
+      // console.log(squareEls)
+      
+      if (square === 1) {
         // console.log(squareEls[idxOfSq])
-        squareEls[idxOfSq].setAttribute("class", "player1")
-        squareEls[idxOfSq].innerHTML = chimmy
+        console.log(document.querySelector(`#sq${rowIdx}${colIdx}`))
+        document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("player1")
+        document.querySelector(`#sq${rowIdx}${colIdx}`).innerHTML = chimmy
       } else if (board[rowIdx][colIdx] === -1) {
-        squareEls[idxOfSq].setAttribute("class", "player2")
-        squareEls[idxOfSq].innerHTML = shooky
+        document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("player2")
+        document.querySelector(`#sq${rowIdx}${colIdx}`).innerHTML = shooky
       } else {
-        squareEls[idxOfSq].setAttribute("class", "blank")
+        document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("blank")
       }
     })
   });
@@ -109,18 +120,31 @@ function render() {
 }
 
 function handleClick(evt) {
-  const sqRowIdx = parseInt(evt.target.id[evt.target.id.length - 2])
+  console.log("clicked")
+  console.log("target:", evt.target)
+  console.log("target col:",evt.target.classList[1][evt.target.classList[1].length - 1])
+  // const sqRowIdx = parseInt(evt.target.id[evt.target.id.length - 2])
   // console.log("clicked sq row:", sqRowIdx)
-  const sqColIdx = parseInt(evt.target.id[evt.target.id.length - 1])
+  // const sqColIdx = parseInt(evt.target.id[evt.target.id.length - 1])
   // console.log("clicked sq col:", sqColIdx)
-
-  if (board[sqRowIdx][sqColIdx]) {
+  let placeCol = evt.target.classList[1][evt.target.classList[1].length - 1]
+  if (!board[placeCol].includes(null)) {
     return
   } else if (winner !== null) {
     return
   }
 
-  board[sqRowIdx][sqColIdx] = turn
+  for(let row = 0;row < 6;row++){
+    if(board[placeCol][row] === null){
+      board[placeCol][row] = turn
+      console.log(placeCol)
+      console.log(row)
+      break
+    }
+  }
+
+
+  // board[sqRowIdx][sqColIdx] = turn
   turn *= -1
   winner = getWinner()
   render()

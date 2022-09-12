@@ -10,6 +10,13 @@ body{
 		Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+#game-info{
+  width: 80vw;
+  background-color: #D7C0AE;
+  border-radius: 20px;
+  padding: 15px;
+  margin-top: 20px;
+}
 
 ul{
   padding:0;

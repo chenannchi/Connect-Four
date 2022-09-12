@@ -35,8 +35,8 @@ let audioBtn = document.getElementById("audio")
 // })
 
 // audioBtn.addEventListener("click", function (evt) {
-//   // console.log("audio clicked")
-//   // console.log(playing)
+  // console.log("audio clicked")
+  // console.log(playing)
 //   if (!playing) {
 //     console.log("start-playing")
 //     music.volume = 0.1
@@ -76,7 +76,7 @@ function init() {
     board[i] = new Array(6).fill(null)
   }
 
-  console.log("board",board)
+  // console.log("board",board)
 
   for(let i = 0;i < 42;i++){
     squareEls[i].textContent = ""
@@ -87,12 +87,12 @@ function init() {
   render()
 }
 
-console.log("board",board)
+// console.log("squareEls",squareEls)
 function render() {
   board.forEach(function (col, colIdx) {
     col.forEach(function (square, rowIdx) {
-      console.log(rowIdx)
-      console.log(colIdx)
+      // console.log(rowIdx)
+      // console.log(colIdx)
       // let idxOfSq = rowIdx * 7 + colIdx
       // console.log(squareEls)
       
@@ -101,7 +101,7 @@ function render() {
         console.log(document.querySelector(`#sq${rowIdx}${colIdx}`))
         document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("player1")
         document.querySelector(`#sq${rowIdx}${colIdx}`).innerHTML = chimmy
-      } else if (board[rowIdx][colIdx] === -1) {
+      } else if (square === -1) {
         document.querySelector(`#sq${rowIdx}${colIdx}`).classList.add("player2")
         document.querySelector(`#sq${rowIdx}${colIdx}`).innerHTML = shooky
       } else {
@@ -120,9 +120,9 @@ function render() {
 }
 
 function handleClick(evt) {
-  console.log("clicked")
-  console.log("target:", evt.target)
-  console.log("target col:",evt.target.classList[1][evt.target.classList[1].length - 1])
+  // console.log("clicked")
+  // console.log("target:", evt.target)
+  // console.log("target col:",evt.target.classList[1][evt.target.classList[1].length - 1])
   // const sqRowIdx = parseInt(evt.target.id[evt.target.id.length - 2])
   // console.log("clicked sq row:", sqRowIdx)
   // const sqColIdx = parseInt(evt.target.id[evt.target.id.length - 1])

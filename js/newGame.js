@@ -46,10 +46,6 @@ document.getElementById("paint-palette").addEventListener("click", function () {
 
 boardEl.addEventListener("click", handleClick)
 
-for(let i = 0;i < 7;i++){
-
-}
-
 restartBtn.addEventListener("click", init)
 
 homeBtn.addEventListener("click", init)
@@ -64,8 +60,9 @@ function init() {
   }
   for(let i = 0;i < 42;i++){
     squareEls[i].textContent = ""
+    squareEls[i].setAttribute("class","blank")
   }
-  turn = 1
+    turn = 1
   winner = null
   render()
 }
@@ -96,7 +93,7 @@ function render() {
 }
 
 function handleClick(evt) {
-  let placeCol = evt.target.classList[1][evt.target.classList[1].length - 1]
+  let placeCol = evt.target.id[evt.target.id.length-1]
   if (!board[placeCol].includes(null)) {
     return
   } else if (winner !== null) {
@@ -159,7 +156,6 @@ function getWinner() {
       }
     }
   }
-
   let emptyR = 0
   board.forEach(function(row){
     if (!row.includes(null)) {

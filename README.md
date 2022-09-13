@@ -26,7 +26,7 @@ Next Steps:
 - **credential**:
 icons from [ICONS8](https://icons8.com/)
 
-music from [PIXABAY](https://pixabay.com/)
+music and sound effect from [PIXABAY](https://pixabay.com/)(https://pixabay.com/sound-effects/stone-dropping-6843/)
 
 background image from [Vecteezy](https://www.vecteezy.com/)
 

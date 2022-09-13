@@ -1,21 +1,21 @@
 /*-------------------------------- Constants --------------------------------*/
 const music = new Audio("assets/background-music.mp3")
-const chimmy = '<img src="./assets/chimmy.png">'
-const cooky = '<img src="./assets/cooky.png">'
-const mang = '<img src="./assets/mang.png">'
-const rj = '<img src="./assets/rj.png">'
-const shooky = '<img src="./assets/shooky.png">'
+const soundEffect = new Audio("assets/token-sound.mp3")
+const chimmy = '<img src="./assets/chimmy.png" style="width:60px">'
+const cooky = '<img src="./assets/cooky.png" style="width:60px">'
+const mang = '<img src="./assets/mang.png" style="width:60px">'
+const rj = '<img src="./assets/rj.png" style="width:60px">'
+const shooky = '<img src="./assets/shooky.png" style="width:60px">'
 
 const rows = 6, cols = 7
-
-
-
 
 
 /*---------------------------- Variables (state) ----------------------------*/
 let board, turn, winner, themeColor
 let playing = 0
 let player1 = chimmy, player2 = shooky
+
+soundEffect.volume = 0.4
 
 /*------------------------ Cached Element References ------------------------*/
 let boardEl = document.querySelector(".board")
@@ -81,10 +81,14 @@ function render() {
         selectSqEl.classList.remove("blank")
         selectSqEl.classList.add("player1")
         selectSqEl.innerHTML = player1
+        selectSqEl.style.animation = "bounce 0.1s"
+        soundEffect.play()
       } else if (square === -1) {
         selectSqEl.classList.remove("blank")
         selectSqEl.classList.add("player2")
         selectSqEl.innerHTML = player2
+        selectSqEl.style.animation = "bounce 0.1s"
+        soundEffect.play()
       } else {
         selectSqEl.classList.add("blank")
       }
@@ -102,7 +106,6 @@ function render() {
 
 function handleClick(evt) {
   let placeCol = evt.target.id[evt.target.id.length-1]
-  // console.log(board[placeCol].includes(null))
   if (board[placeCol].includes(null)!==true) {
     return
   } else if (winner !== null) {

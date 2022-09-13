@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("https://static.vecteezy.com/system/resources/previews/005/260/047/original/holographic-fantasy-rainbow-unicorn-background-with-clouds-hearts-and-stars-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector.jpg");
   background-size: cover;
   font-family: 'Caveat', cursive;
@@ -12,13 +12,30 @@ body {
 
 .square{
   border-radius: 50%;
+  text-align: center;
+  vertical-align:middle;
 }
 
-/* #function-bar{
+#function-bar{
   display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-} */
+  justify-content: space-around;
+  width:95vw;
+  margin: 10px;
+}
+
+h1{
+  color:#FFF6BF;
+  text-shadow: 2px 2px #C98474;
+  font-size: 50px;
+  animation: bounce 2s;
+  animation-iteration-count: 3;
+}
+
+h2{
+  color:#FCE2DB;
+  font-size: 40px;
+  text-shadow: 2px 2px #7A4495;
+}
 
 
 .blank {
@@ -31,10 +48,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 70px);
   margin: 10px;
-  /* border: rgba(177, 178, 255) 2px solid;
-  background-color: rgb(177, 178, 255, 0.7); */
   border: rgb(100, 92, 170) 2px solid;
-  /* background-color: rgba(100, 92, 170, 0.7); */
   background-color: rgba(195, 248, 255, 0.4);
   border-radius: 10%;
   padding:10px;
@@ -68,6 +82,21 @@ body {
   font-size: 20px;
 }
 
-#homelink {
-  color: white;
+#restart-btn{
+  background-color: #7A4495;
+}
+
+#restart-btn:hover,
+#home-btn:hover{
+  background-color: rgba(195, 248, 255, 0.4);
+  color:black;
+}
+
+#home-btn{
+  background-color: navy;
+}
+
+#hint-msg{
+  animation: flash 2s;
+  animation-iteration-count: 2;
 }

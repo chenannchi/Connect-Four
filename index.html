@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
   <link rel="stylesheet" href="./css/home.css">
   <script defer src="./js/game.js"></script>
   <link id="favicon" rel="icon" href="./assets/connect-four-logo.png" type="image/png" sizes="32x32">
@@ -17,7 +19,7 @@
 </head>
 
 <body>
-  <h1>Welcome to Connect Four !</h1>
+  <h1 class="animate__animated animate__pulse">Welcome to Connect Four !</h1>
   <h2>Let's start!</h2>
   <div id="game-info">
     <h3>Rules</h3>
@@ -28,9 +30,9 @@
       be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens.
     </p>
   </div>
-  <button id="start-btn" class="btn btn-primary">
-    <a id="start-link" href="./game.html">Start</a>
-  </button>
+  <form action="./game.html">
+    <input id="start-btn" class="btn btn-primary" type="submit" value="Start" />
+  </form>
 </body>
 
 </html>

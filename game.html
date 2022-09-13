@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" href="./css/game.css">
   <script defer src="./js/game.js"></script>
   <link id="favicon" rel="icon" href="./assets/connect-four-logo.png" type="image/png" sizes="32x32">
@@ -20,7 +21,6 @@
   <div id="function-bar">
     <img id="timer" src="./assets/timer.png" alt="timer">
     <img id="audio" src="./assets/no-audio.png" alt="audio">
-    <!-- <img id="paint-palette" src="./assets/paint-palette.png" alt="paint-palette"> -->
   </div>
   <h1>Connect Four</h1>
   <h2 id="hint-msg">hint msg</h2>
@@ -84,8 +84,9 @@
   </section>
   <div id="btns">
     <button id="restart-btn" class="btn btn-dark">Restart</button>
-    <button id="home-btn" class="btn btn-secondary"><a id="homelink" href="./index.html"
-        style="text-decoration:none">Home</a></button>
+    <form action="./index.html">
+      <input id = "home-btn" type="submit" value="Home" class="btn btn-secondary"/>
+    </form>
   </div>
 </body>
 

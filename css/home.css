@@ -74,20 +74,23 @@ section.board div{
 
 #start-btn{
   background-color: skyblue;
-  border-color: skyblue;
-  border: navy 2px outset;
+  color:navy;
 }
 
-#start-link{
-  color:navy;
-  font-size: 20px;
+#start-btn:hover{
+  background-color: aquamarine;
+  border: aquamarine;
 }
 
 h1{
   color:#FFF6BF;
   text-shadow: 2px 2px #C98474;
   font-size: 50px;
+  animation: bounce 10s;
+  /* animation-fill-mode: forwards;  */
+  animation-iteration-count: infinite;
 }
+
 
 h2{
   color:#A0D995;

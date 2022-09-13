@@ -8,9 +8,14 @@ const shooky = '<img src="./assets/shooky.png">'
 
 const rows = 6, cols = 7
 
+
+
+
+
 /*---------------------------- Variables (state) ----------------------------*/
 let board, turn, winner, themeColor
 let playing = 0
+let player1 = chimmy, player2 = shooky
 
 /*------------------------ Cached Element References ------------------------*/
 let boardEl = document.querySelector(".board")
@@ -73,10 +78,10 @@ function render() {
       let selectSqEl = document.querySelector(`#sq${rowIdx}${colIdx}`)
       if (square === 1) {
         selectSqEl.classList.add("player1")
-        selectSqEl.innerHTML = chimmy
+        selectSqEl.innerHTML = player1
       } else if (square === -1) {
         selectSqEl.classList.add("player2")
-        selectSqEl.innerHTML = shooky
+        selectSqEl.innerHTML = player2
       } else {
         selectSqEl.classList.add("blank")
       }
@@ -94,7 +99,8 @@ function render() {
 
 function handleClick(evt) {
   let placeCol = evt.target.id[evt.target.id.length-1]
-  if (!board[placeCol].includes(null)) {
+  // console.log(board[placeCol].includes(null))
+  if (board[placeCol].includes(null)!==true) {
     return
   } else if (winner !== null) {
     return

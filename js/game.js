@@ -46,10 +46,6 @@ audioBtn.addEventListener("click", function (evt) {
   }
 })
 
-// document.getElementById("paint-palette").addEventListener("click", function () {
-//   console.log("paint palette clicked")
-// })
-
 boardEl.addEventListener("click", handleClick)
 
 restartBtn.addEventListener("click", init)

@@ -31,3 +31,5 @@ music and sound effect from [PIXABAY](https://pixabay.com/)(https://pixabay.com/
 background image from [Vecteezy](https://www.vecteezy.com/)
 
 fonts from [Google Fonts](https://fonts.google.com/)
+
+animations from [Animate.css](https://animate.style/)

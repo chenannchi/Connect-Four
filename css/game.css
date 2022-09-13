@@ -52,6 +52,7 @@ h2{
   background-color: rgba(195, 248, 255, 0.4);
   border-radius: 10%;
   padding:10px;
+  box-shadow:5px 10px rgb(100, 92, 170);
 }
 
 .column {

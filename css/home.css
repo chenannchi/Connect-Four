@@ -75,6 +75,7 @@ section.board div{
 #start-btn{
   background-color: skyblue;
   color:navy;
+  font-size: 20px;
 }
 
 #start-btn:hover{

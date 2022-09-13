@@ -14,6 +14,7 @@ const rows = 6, cols = 7
 let board, turn, winner, themeColor
 let playing = 0
 let player1 = chimmy, player2 = shooky
+let winningCombo = []
 
 soundEffect.volume = 0.4
 
@@ -67,6 +68,7 @@ function init() {
     squareEls[i].textContent = ""
     squareEls[i].setAttribute("class","blank")
     squareEls[i].classList.add("square")
+    squareEls[i].removeAttribute("style")
   }
   turn = 1
   winner = null
@@ -101,6 +103,9 @@ function render() {
     hintMsg.textContent = "It's a tie!"
   } else {
     hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
+    for(let i = 0;i < winningCombo.length;i++){
+      winningCombo[i].style.animation = "heartBeat 2s"
+    }
   }
 }
 
@@ -124,46 +129,63 @@ function handleClick(evt) {
 }
 
 function getWinner() {
-  // horizontal
   let total
-  for (let i = 0; i < rows; i++) {
+  // vertical
+  for (let i = 0; i < cols; i++) {
     total = 0
-    for (let j = 0; j < cols - 3; j++) {
+    for (let j = 0; j < rows - 3; j++) {
       total = board[i][j] + board[i][j + 1] + board[i][j + 2] + board[i][j + 3]
       if (Math.abs(total) === 4) {
+        winningCombo.push(document.querySelector(`#sq${j}${i}`))      
+        winningCombo.push(document.querySelector(`#sq${j+1}${i}`))
+        winningCombo.push(document.querySelector(`#sq${j+2}${i}`))
+        winningCombo.push(document.querySelector(`#sq${j+3}${i}`))
+        console.dir(winningCombo)
         return board[i][j]
       }
     }
   }
 
-  // vertical 
-  for (let i = 0; i < cols; i++) {
+  // horizontal 
+  for (let i = 0; i < rows; i++) {
     total = 0
-    for (let j = 0; j < rows - 3; j++) {
+    for (let j = 0; j < cols - 3; j++) {
       total = board[j][i] + board[j + 1][i] + board[j + 2][i] + board[j + 3][i]
       if (Math.abs(total) === 4) {
+        console.log(j,i)
+        console.log(j+1,i)
+        console.log(j+2,i)
+        console.log(j+3,i)
         return board[j][i]
       }
     }
   }
 
-  // ascending
-  for (let i = 3; i < rows; i++) {
+  // descending
+  for (let i = 3; i < cols; i++) {
     total = 0
-    for (let j = 0; j < cols - 3; j++) {
+    for (let j = 0; j < rows - 3; j++) {
       total = board[i][j] + board[i - 1][j + 1] + board[i - 2][j + 2] + board[i - 3][j + 3]
       if (Math.abs(total) === 4) {
+        console.log(i,j)
+        console.log(i-1,j+1)
+        console.log(i-2,j+2)
+        console.log(i-3,j+3)
         return board[i][j]
       }
     }
   }
 
-  // descending
-  for (let i = 3; i < rows; i++) {
+  // ascending
+  for (let i = 3; i < cols; i++) {
     total = 0
-    for (let j = 3; j < cols; j++) {
+    for (let j = 3; j < rows; j++) {
       total = board[i][j] + board[i - 1][j - 1] + board[i - 2][j - 2] + board[i - 3][j - 3]
       if (Math.abs(total) === 4) {
+        console.log(i,j)
+        console.log(i-1,j-1)
+        console.log(i-2,j-2)
+        console.log(i-3,j-3)
         return board[i][j]
       }
     }

@@ -34,7 +34,7 @@ document.getElementById("timer").addEventListener("click", function () {
 
 audioBtn.addEventListener("click", function (evt) {
   if (!playing) {
-    music.volume = 0.1
+    music.volume = 0.05
     music.play()
     audioBtn.setAttribute("src", "/assets/audio.png")
     playing = 1
@@ -65,10 +65,10 @@ function init() {
   }
   for(let i = 0;i < 42;i++){
     squareEls[i].textContent = ""
-    // squareEls[i].setAttribute("class","blank")
-    squareEls[i].classList.add("blank")
+    squareEls[i].setAttribute("class","blank")
+    squareEls[i].classList.add("square")
   }
-    turn = 1
+  turn = 1
   winner = null
   render()
 }

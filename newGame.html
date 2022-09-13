@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/newGame.css">
   <script defer src="./js/newGame.js"></script>
   <link id="favicon" rel="icon" href="./assets/connect-four-logo.png" type="image/png" sizes="32x32">
@@ -15,14 +19,14 @@
 
 <body>
   <div id="fonctionalities-bar">
-      <img id="timer" src="./assets/timer.png" alt="timer">
-      <img id="audio" src="./assets/no-audio.png" alt="audio">
-      <img id="paint-palette" src="./assets/paint-palette.png" alt="paint-palette">
+    <img id="timer" src="./assets/timer.png" alt="timer">
+    <img id="audio" src="./assets/no-audio.png" alt="audio">
+    <img id="paint-palette" src="./assets/paint-palette.png" alt="paint-palette">
   </div>
   <h1>Connect Four</h1>
   <h2 id="hint-msg">hint msg</h2>
   <section class="board" id="game-board">
-    <div id = "col0" class = "column">
+    <div id="col0" class="column">
       <div id="sq50" class="square col0"></div>
       <div id="sq40" class="square col0"></div>
       <div id="sq30" class="square col0"></div>
@@ -30,7 +34,7 @@
       <div id="sq10" class="square col0"></div>
       <div id="sq00" class="square col0"></div>
     </div>
-    <div id = "col1" class = "column">
+    <div id="col1" class="column">
       <div id="sq51" class="square col1"></div>
       <div id="sq41" class="square col1"></div>
       <div id="sq31" class="square col1"></div>
@@ -38,7 +42,7 @@
       <div id="sq11" class="square col1"></div>
       <div id="sq01" class="square col1"></div>
     </div>
-    <div id = "col2" class = "column">
+    <div id="col2" class="column">
       <div id="sq52" class="square col2"></div>
       <div id="sq42" class="square col2"></div>
       <div id="sq32" class="square col2"></div>
@@ -46,7 +50,7 @@
       <div id="sq12" class="square col2"></div>
       <div id="sq02" class="square col2"></div>
     </div>
-    <div id = "col3" class = "column">
+    <div id="col3" class="column">
       <div id="sq53" class="square col3"></div>
       <div id="sq43" class="square col3"></div>
       <div id="sq33" class="square col3"></div>
@@ -54,7 +58,7 @@
       <div id="sq13" class="square col3"></div>
       <div id="sq03" class="square col3"></div>
     </div>
-    <div id = "col4" class = "column">
+    <div id="col4" class="column">
       <div id="sq54" class="square col4"></div>
       <div id="sq44" class="square col4"></div>
       <div id="sq34" class="square col4"></div>
@@ -62,7 +66,7 @@
       <div id="sq14" class="square col4"></div>
       <div id="sq04" class="square col4"></div>
     </div>
-    <div id = "col5" class = "column">
+    <div id="col5" class="column">
       <div id="sq55" class="square col5"></div>
       <div id="sq45" class="square col5"></div>
       <div id="sq35" class="square col5"></div>
@@ -70,7 +74,7 @@
       <div id="sq15" class="square col5"></div>
       <div id="sq05" class="square col5"></div>
     </div>
-    <div id = "col6" class = "column">
+    <div id="col6" class="column">
       <div id="sq56" class="square col6"></div>
       <div id="sq46" class="square col6"></div>
       <div id="sq36" class="square col6"></div>
@@ -81,7 +85,8 @@
   </section>
   <div id="btns">
     <button id="restart-btn" class="btn btn-secondary">Restart</button>
-    <button id="home-btn" class="btn btn-success"><a id="homelink" href="./index.html" style="text-decoration:none">Home</a></button>
+    <button id="home-btn" class="btn btn-success"><a id="homelink" href="./index.html"
+        style="text-decoration:none">Home</a></button>
   </div>
 </body>
 

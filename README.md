@@ -27,3 +27,5 @@ Next Steps:
 icons from [ICONS8](https://icons8.com/)
 
 music from [PIXABAY](https://pixabay.com/)
+
+background image from [vecteezy](https://www.vecteezy.com/)

@@ -45,9 +45,9 @@ audioBtn.addEventListener("click", function (evt) {
   }
 })
 
-document.getElementById("paint-palette").addEventListener("click", function () {
-  console.log("paint palette clicked")
-})
+// document.getElementById("paint-palette").addEventListener("click", function () {
+//   console.log("paint palette clicked")
+// })
 
 boardEl.addEventListener("click", handleClick)
 
@@ -65,7 +65,8 @@ function init() {
   }
   for(let i = 0;i < 42;i++){
     squareEls[i].textContent = ""
-    squareEls[i].setAttribute("class","blank")
+    // squareEls[i].setAttribute("class","blank")
+    squareEls[i].classList.add("blank")
   }
     turn = 1
   winner = null
@@ -77,9 +78,11 @@ function render() {
     col.forEach(function (square, rowIdx) {
       let selectSqEl = document.querySelector(`#sq${rowIdx}${colIdx}`)
       if (square === 1) {
+        selectSqEl.classList.remove("blank")
         selectSqEl.classList.add("player1")
         selectSqEl.innerHTML = player1
       } else if (square === -1) {
+        selectSqEl.classList.remove("blank")
         selectSqEl.classList.add("player2")
         selectSqEl.innerHTML = player2
       } else {

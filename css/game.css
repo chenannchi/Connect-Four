@@ -1,0 +1,74 @@
+body {
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: rgb(240, 229, 220);
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/260/047/original/holographic-fantasy-rainbow-unicorn-background-with-clouds-hearts-and-stars-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector.jpg");
+  background-size: cover;
+  font-family: 'Caveat', cursive;
+}
+
+.square{
+  border-radius: 50%;
+}
+
+/* #function-bar{
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+} */
+
+
+.blank {
+  border: black 2px solid;
+  margin: 2px;
+  background-color: rgba(238, 105, 131,0.3);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  margin: 10px;
+  /* border: rgba(177, 178, 255) 2px solid;
+  background-color: rgb(177, 178, 255, 0.7); */
+  border: rgb(100, 92, 170) 2px solid;
+  background-color: rgba(100, 92, 170, 0.7);
+
+  border-radius: 10%;
+  padding:10px;
+}
+
+.column {
+  display: grid;
+  grid-template-rows: repeat(6, 60px);
+}
+
+.player1 {
+  border: black 2px solid;
+  margin: 2px;
+  background-color: rgb(37, 49, 109);
+}
+
+.player2 {
+  border: black 2px solid;
+  margin: 2px;
+  background-color: rgb(238, 105, 131);
+}
+
+
+#btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  margin: 5px;
+  font-size: 20px;
+}
+
+#homelink {
+  color: white;
+}

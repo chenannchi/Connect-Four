@@ -10,10 +10,12 @@ The reason why I choose the game is because this is the game I most familiar wit
 
 - **Getting Started**: Include a link to your deployed game and any instructions you deem important.
 
-[The Connect Four]()
+[The Connect Four](https://anchi-chen-connect-four.netlify.app/)
 
 - **Screenshot(s):** A screenshot or two of your game.
 
+[screenshot-1](./assets/screenshot-1.png)
+[screenshot-2](./assets/screenshot-2.png)
 
 - **Technologies Used**: List of the technologies used, for example: JavaScript, HTML, CSS, etc.
 

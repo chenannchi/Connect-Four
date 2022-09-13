@@ -70,6 +70,7 @@ function init() {
     squareEls[i].classList.add("square")
     squareEls[i].removeAttribute("style")
   }
+  winningCombo = []
   turn = 1
   winner = null
   render()
@@ -152,10 +153,10 @@ function getWinner() {
     for (let j = 0; j < cols - 3; j++) {
       total = board[j][i] + board[j + 1][i] + board[j + 2][i] + board[j + 3][i]
       if (Math.abs(total) === 4) {
-        console.log(j,i)
-        console.log(j+1,i)
-        console.log(j+2,i)
-        console.log(j+3,i)
+        winningCombo.push(document.querySelector(`#sq${i}${j}`))      
+        winningCombo.push(document.querySelector(`#sq${i}${j+1}`))
+        winningCombo.push(document.querySelector(`#sq${i}${j+2}`))
+        winningCombo.push(document.querySelector(`#sq${i}${j+3}`))
         return board[j][i]
       }
     }
@@ -167,10 +168,10 @@ function getWinner() {
     for (let j = 0; j < rows - 3; j++) {
       total = board[i][j] + board[i - 1][j + 1] + board[i - 2][j + 2] + board[i - 3][j + 3]
       if (Math.abs(total) === 4) {
-        console.log(i,j)
-        console.log(i-1,j+1)
-        console.log(i-2,j+2)
-        console.log(i-3,j+3)
+        winningCombo.push(document.querySelector(`#sq${j}${i}`))      
+        winningCombo.push(document.querySelector(`#sq${j+1}${i-1}`))
+        winningCombo.push(document.querySelector(`#sq${j+2}${i-2}`))
+        winningCombo.push(document.querySelector(`#sq${j+3}${i-3}`))
         return board[i][j]
       }
     }
@@ -182,10 +183,10 @@ function getWinner() {
     for (let j = 3; j < rows; j++) {
       total = board[i][j] + board[i - 1][j - 1] + board[i - 2][j - 2] + board[i - 3][j - 3]
       if (Math.abs(total) === 4) {
-        console.log(i,j)
-        console.log(i-1,j-1)
-        console.log(i-2,j-2)
-        console.log(i-3,j-3)
+        winningCombo.push(document.querySelector(`#sq${j}${i}`))      
+        winningCombo.push(document.querySelector(`#sq${j-1}${i-1}`))
+        winningCombo.push(document.querySelector(`#sq${j-2}${i-2}`))
+        winningCombo.push(document.querySelector(`#sq${j-3}${i-3}`))
         return board[i][j]
       }
     }

@@ -30,21 +30,23 @@ let name1El = document.getElementById("player1Name")
 let name2El = document.getElementById("player2Name")
 let name1SubmitBtn = document.getElementById("name1Submit")
 let name2SubmitBtn = document.getElementById("name2Submit")
-
+let askNameEl = document.getElementById("askToEnterName")
 /*----------------------------- Event Listeners -----------------------------*/
 // document.getElementById("timer").addEventListener("click", function () {
 //   console.log("timer clicked")
 // })
 
-// name1SubmitBtn.addEventListener("click",function(){
-//   name1 = name1El.value
-//   console.log(name1)
-// })
+name1SubmitBtn.addEventListener("click",function(){
+  name1 = name1El.value
+  askNameEl.textContent = name1 + ", please wait for player 2 to enter name!"
+  askNameEl.style.animation = "bounce 1s"
+})
 
-// name2SubmitBtn.addEventListener("click",function(){
-//   name2 = name2El.value
-//   console.log(name2)
-// })
+name2SubmitBtn.addEventListener("click",function(){
+  name2 = name2El.value
+  askNameEl.hidden = true
+  init()
+})
 
 audioBtn.addEventListener("click", function (evt) {
   if (!playing) {
@@ -66,9 +68,11 @@ restartBtn.addEventListener("click", init)
 homeBtn.addEventListener("click", init)
 
 /*-------------------------------- Functions --------------------------------*/
-init()
+// init()
 
 function init() {
+  // hintMsg.textContent = "Two players, please enter your name:"
+  hintMsg.hidden = false
   board = new Array(7).fill(null)
   for (let i = 0; i < 7; i++) {
     board[i] = new Array(6).fill(null)
@@ -111,14 +115,14 @@ function render() {
   // name2 = name2El.value
 
   if (winner === null) {
-    hintMsg.textContent = `${turn === 1 ? "Player1" : "Player2"}, it's your turn!`
+    // hintMsg.textContent = `${turn === 1 ? "Player1" : "Player2"}, it's your turn!`
     // console.log(name1)
-    // hintMsg.textContent = `${turn === 1 ? name1 : name2}, it's your turn!`
+    hintMsg.textContent = `${turn === 1 ? name1 : name2}, it's your turn!`
   } else if (winner === "T") {
     hintMsg.textContent = "It's a tie!"
   } else {
-    hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
-    // hintMsg.textContent = `${winner === 1 ? name1 : name2} win!!!!!`
+    // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
+    hintMsg.textContent = `${winner === 1 ? name1 : name2} win!!!!!`
     confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"

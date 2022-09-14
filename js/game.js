@@ -40,11 +40,20 @@ name1SubmitBtn.addEventListener("click",function(){
   name1 = name1El.value
   askNameEl.textContent = name1 + ", please wait for player 2 to enter name!"
   askNameEl.style.animation = "bounce 1s"
+  name1El.hidden = true
+  name1SubmitBtn.hidden = true
+  // let nameContent1 = document.createElement("div")
+  // nameContent1.textContent = name1
+  // document.se
+  document.getElementById("nameContent1").textContent = "Name of the player:\n" + name1
 })
 
 name2SubmitBtn.addEventListener("click",function(){
   name2 = name2El.value
   askNameEl.hidden = true
+  name2El.hidden = true
+  name2SubmitBtn.hidden = true
+  document.getElementById("nameContent2").textContent = "Name of the player:\n" + name2
   init()
 })
 

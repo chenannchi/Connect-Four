@@ -50,11 +50,11 @@ h1{
   text-shadow: 2px 2px #C98474;
   font-size: 50px;
   animation: bounce 2s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
 }
 
 h2{
-  color:#FCE2DB;
+  color:#fcf9f8;
   font-size: 40px;
   text-shadow: 2px 2px #7A4495;
 }
@@ -77,6 +77,10 @@ h2{
   box-shadow:5px 10px rgb(100, 92, 170);
 }
 
+#askToEnterName{
+  margin: 60px 0;
+}
+
 .column {
   display: grid;
   grid-template-rows: repeat(6, 70px);
@@ -94,6 +98,21 @@ h2{
   background-color: rgb(238, 105, 131);
 }
 
+#nameContent1{
+  color:skyblue;
+  font-weight: bolder;
+  font-size: 40px;
+  text-shadow: 2px 2px blue;
+  /* -webkit-text-stroke: 1px rgb(37, 49, 109); */
+}
+
+#nameContent2{
+  color: rgb(236, 153, 167);
+  font-weight: bolder;
+  font-size: 40px;
+  text-shadow: 2px 2px rgb(96, 9, 136);  
+  /* -webkit-text-stroke: 1px darkred; */
+}
 
 #btns {
   display: flex;

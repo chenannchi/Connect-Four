@@ -25,11 +25,11 @@
   </div>
   <h1>Connect Four</h1>
   <!-- <button id="start-btn" class="btn btn-primary">Start</button> -->
-  <h2 id="askToEnterName">Two players, please enter your name!</h2>
+  <h2 id="askToEnterName" style="animation:pulse 1s;animation-iteration-count: infinite;">Two players, please enter your name!</h2>
   <h2 id="hint-msg" hidden>hint msg</h2>
   <div id="game-section">
     <div id="player1-info">
-      <h4 id="nameContent1">Player1, please enter your name:</h4>
+      <h4 id="nameContent1" class="nameContent">Player1, please enter your name:</h4>
       <input id="player1Name" type="text">
       <button id="name1Submit" class="btn btn-primary" style="vertical-align:middle;padding:1px 8px">Enter</button>
     </div>
@@ -38,7 +38,7 @@
       <input id="player2Name" type="text">
       <button id="name2Submit" class="btn btn-primary" style="vertical-align:middle;padding:1px 8px">Enter</button>
     </div>
-    <section class="board" id="game-board">
+    <section class="board" id="game-board" hidden>
       <div id="col0" class="column">
         <div id="sq50" class="square"></div>
         <div id="sq40" class="square"></div>
@@ -100,9 +100,9 @@
   </div>
 
   <div id="btns">
-    <button id="restart-btn" class="btn btn-dark">Restart</button>
+    <button id="restart-btn" class="btn btn-dark" hidden>Restart</button>
     <form action="./index.html">
-      <input id="home-btn" type="submit" value="Home" class="btn btn-secondary" />
+      <input id="home-btn" type="submit" value="Home" class="btn btn-secondary" hidden />
     </form>
   </div>
 </body>

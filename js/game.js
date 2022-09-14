@@ -19,7 +19,7 @@ let winningCombo = []
 soundEffect.volume = 0.4
 
 /*------------------------ Cached Element References ------------------------*/
-let boardEl = document.querySelector(".board")
+let boardEl = document.querySelector("#game-board")
 let hintMsg = document.querySelector("#hint-msg")
 let squareEls = document.querySelectorAll(".square")
 let startBtn = document.querySelector("#next-btn")
@@ -45,7 +45,7 @@ name1SubmitBtn.addEventListener("click",function(){
   // let nameContent1 = document.createElement("div")
   // nameContent1.textContent = name1
   // document.se
-  document.getElementById("nameContent1").textContent = "Name of the player:\n" + name1
+  document.getElementById("nameContent1").textContent = "Name of the player 1:\n" + name1
 })
 
 name2SubmitBtn.addEventListener("click",function(){
@@ -53,7 +53,7 @@ name2SubmitBtn.addEventListener("click",function(){
   askNameEl.hidden = true
   name2El.hidden = true
   name2SubmitBtn.hidden = true
-  document.getElementById("nameContent2").textContent = "Name of the player:\n" + name2
+  document.getElementById("nameContent2").textContent = "Name of the player 2:\n" + name2
   init()
 })
 
@@ -80,6 +80,9 @@ homeBtn.addEventListener("click", init)
 // init()
 
 function init() {
+  boardEl.hidden = false
+  restartBtn.hidden = false
+  homeBtn.hidden = false
   // hintMsg.textContent = "Two players, please enter your name:"
   hintMsg.hidden = false
   board = new Array(7).fill(null)

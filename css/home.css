@@ -72,13 +72,13 @@ section.board div{
   height:20px;
 }
 
-#start-btn{
+#next-btn{
   background-color: skyblue;
   color:navy;
   font-size: 20px;
 }
 
-#start-btn:hover{
+#next-btn:hover{
   background-color: aquamarine;
   border: aquamarine;
 }

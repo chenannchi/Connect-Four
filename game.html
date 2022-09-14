@@ -20,73 +20,88 @@
 
 <body>
   <div id="function-bar">
-    <img id="timer" src="./assets/timer.png" alt="timer">
+    <!-- <img id="timer" src="./assets/timer.png" alt="timer"> -->
     <img id="audio" src="./assets/no-audio.png" alt="audio">
   </div>
   <h1>Connect Four</h1>
+  <!-- <button id="start-btn" class="btn btn-primary">Start</button> -->
   <h2 id="hint-msg">hint msg</h2>
-  <section class="board" id="game-board">
-    <div id="col0" class="column">
-      <div id="sq50" class="square"></div>
-      <div id="sq40" class="square"></div>
-      <div id="sq30" class="square"></div>
-      <div id="sq20" class="square"></div>
-      <div id="sq10" class="square"></div>
-      <div id="sq00" class="square"></div>
+  <div id="game-section">
+    <!-- <div id="player1-info">
+      <h4>Player1, please enter your name:</h4>
+      <input id="player1Name" type="text">
+      <button id="name1Submit" class="btn btn-primary" style="vertical-align:middle;padding:1px 8px">Enter</button>
     </div>
-    <div id="col1" class="column">
-      <div id="sq51" class="square"></div>
-      <div id="sq41" class="square"></div>
-      <div id="sq31" class="square"></div>
-      <div id="sq21" class="square"></div>
-      <div id="sq11" class="square"></div>
-      <div id="sq01" class="square"></div>
-    </div>
-    <div id="col2" class="column">
-      <div id="sq52" class="square"></div>
-      <div id="sq42" class="square"></div>
-      <div id="sq32" class="square"></div>
-      <div id="sq22" class="square"></div>
-      <div id="sq12" class="square"></div>
-      <div id="sq02" class="square"></div>
-    </div>
-    <div id="col3" class="column">
-      <div id="sq53" class="square"></div>
-      <div id="sq43" class="square"></div>
-      <div id="sq33" class="square"></div>
-      <div id="sq23" class="square"></div>
-      <div id="sq13" class="square"></div>
-      <div id="sq03" class="square"></div>
-    </div>
-    <div id="col4" class="column">
-      <div id="sq54" class="square"></div>
-      <div id="sq44" class="square"></div>
-      <div id="sq34" class="square"></div>
-      <div id="sq24" class="square"></div>
-      <div id="sq14" class="square"></div>
-      <div id="sq04" class="square"></div>
-    </div>
-    <div id="col5" class="column">
-      <div id="sq55" class="square"></div>
-      <div id="sq45" class="square"></div>
-      <div id="sq35" class="square"></div>
-      <div id="sq25" class="square"></div>
-      <div id="sq15" class="square"></div>
-      <div id="sq05" class="square"></div>
-    </div>
-    <div id="col6" class="column">
-      <div id="sq56" class="square"></div>
-      <div id="sq46" class="square"></div>
-      <div id="sq36" class="square"></div>
-      <div id="sq26" class="square"></div>
-      <div id="sq16" class="square"></div>
-      <div id="sq06" class="square"></div>
-    </div>
-  </section>
+    <div id="player2-info">
+      <h4>Player2, please enter your name:</h4>
+      <input id="player2Name" type="text">
+      <button id="name2Submit" class="btn btn-primary" style="vertical-align:middle;padding:1px 8px">Enter</button>
+    </div> -->
+    <section class="board" id="game-board">
+      <div id="col0" class="column">
+        <div id="sq50" class="square"></div>
+        <div id="sq40" class="square"></div>
+        <div id="sq30" class="square"></div>
+        <div id="sq20" class="square"></div>
+        <div id="sq10" class="square"></div>
+        <div id="sq00" class="square"></div>
+      </div>
+      <div id="col1" class="column">
+        <div id="sq51" class="square"></div>
+        <div id="sq41" class="square"></div>
+        <div id="sq31" class="square"></div>
+        <div id="sq21" class="square"></div>
+        <div id="sq11" class="square"></div>
+        <div id="sq01" class="square"></div>
+      </div>
+      <div id="col2" class="column">
+        <div id="sq52" class="square"></div>
+        <div id="sq42" class="square"></div>
+        <div id="sq32" class="square"></div>
+        <div id="sq22" class="square"></div>
+        <div id="sq12" class="square"></div>
+        <div id="sq02" class="square"></div>
+      </div>
+      <div id="col3" class="column">
+        <div id="sq53" class="square"></div>
+        <div id="sq43" class="square"></div>
+        <div id="sq33" class="square"></div>
+        <div id="sq23" class="square"></div>
+        <div id="sq13" class="square"></div>
+        <div id="sq03" class="square"></div>
+      </div>
+      <div id="col4" class="column">
+        <div id="sq54" class="square"></div>
+        <div id="sq44" class="square"></div>
+        <div id="sq34" class="square"></div>
+        <div id="sq24" class="square"></div>
+        <div id="sq14" class="square"></div>
+        <div id="sq04" class="square"></div>
+      </div>
+      <div id="col5" class="column">
+        <div id="sq55" class="square"></div>
+        <div id="sq45" class="square"></div>
+        <div id="sq35" class="square"></div>
+        <div id="sq25" class="square"></div>
+        <div id="sq15" class="square"></div>
+        <div id="sq05" class="square"></div>
+      </div>
+      <div id="col6" class="column">
+        <div id="sq56" class="square"></div>
+        <div id="sq46" class="square"></div>
+        <div id="sq36" class="square"></div>
+        <div id="sq26" class="square"></div>
+        <div id="sq16" class="square"></div>
+        <div id="sq06" class="square"></div>
+      </div>
+    </section>
+
+  </div>
+
   <div id="btns">
     <button id="restart-btn" class="btn btn-dark">Restart</button>
     <form action="./index.html">
-      <input id = "home-btn" type="submit" value="Home" class="btn btn-secondary"/>
+      <input id="home-btn" type="submit" value="Home" class="btn btn-secondary" />
     </form>
   </div>
 </body>

@@ -7,12 +7,11 @@ const cooky = '<img src="./assets/cooky.png" style="width:60px">'
 const mang = '<img src="./assets/mang.png" style="width:60px">'
 const rj = '<img src="./assets/rj.png" style="width:60px">'
 const shooky = '<img src="./assets/shooky.png" style="width:60px">'
-
 const rows = 6, cols = 7
 
 
 /*---------------------------- Variables (state) ----------------------------*/
-let board, turn, winner, themeColor
+let board, turn, winner, themeColor, name1, name2
 let playing = 0
 let player1 = chimmy, player2 = shooky
 let winningCombo = []
@@ -23,16 +22,29 @@ soundEffect.volume = 0.4
 let boardEl = document.querySelector(".board")
 let hintMsg = document.querySelector("#hint-msg")
 let squareEls = document.querySelectorAll(".square")
-let startBtn = document.querySelector("#start-btn")
+let startBtn = document.querySelector("#next-btn")
 let restartBtn = document.querySelector("#restart-btn")
 let homeBtn = document.querySelector("#home-btn")
 let audioBtn = document.getElementById("audio")
-
+let name1El = document.getElementById("player1Name")
+let name2El = document.getElementById("player2Name")
+let name1SubmitBtn = document.getElementById("name1Submit")
+let name2SubmitBtn = document.getElementById("name2Submit")
 
 /*----------------------------- Event Listeners -----------------------------*/
-document.getElementById("timer").addEventListener("click", function () {
-  console.log("timer clicked")
-})
+// document.getElementById("timer").addEventListener("click", function () {
+//   console.log("timer clicked")
+// })
+
+// name1SubmitBtn.addEventListener("click",function(){
+//   name1 = name1El.value
+//   console.log(name1)
+// })
+
+// name2SubmitBtn.addEventListener("click",function(){
+//   name2 = name2El.value
+//   console.log(name2)
+// })
 
 audioBtn.addEventListener("click", function (evt) {
   if (!playing) {
@@ -95,13 +107,19 @@ function render() {
     })
   });
 
+  // name1 = name1El.value
+  // name2 = name2El.value
+
   if (winner === null) {
     hintMsg.textContent = `${turn === 1 ? "Player1" : "Player2"}, it's your turn!`
+    // console.log(name1)
+    // hintMsg.textContent = `${turn === 1 ? name1 : name2}, it's your turn!`
   } else if (winner === "T") {
     hintMsg.textContent = "It's a tie!"
   } else {
     hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
-    confetti.start(2000)
+    // hintMsg.textContent = `${winner === 1 ? name1 : name2} win!!!!!`
+    confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"
     }
@@ -110,6 +128,8 @@ function render() {
     }
     winSound.play()
   }
+
+
 }
 
 function handleClick(evt) {

@@ -10,6 +10,29 @@ body {
   font-family: 'Caveat', cursive;
 }
 
+.column:hover{
+  background-color: #916BBF;
+  border-radius: 20px;
+}
+
+#audio,
+#timer{
+  height: 80px;
+  width: 80px;
+}
+
+#game-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 95vw;
+}
+
+#player2-info{
+  order:1;
+}
+
+
 .square{
   border-radius: 50%;
   text-align: center;
@@ -18,7 +41,7 @@ body {
 
 #function-bar{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   width:95vw;
   margin: 10px;
 }
@@ -47,7 +70,7 @@ h2{
 .board {
   display: grid;
   grid-template-columns: repeat(7, 70px);
-  margin: 10px;
+  margin: 20px;
   border: rgb(100, 92, 170) 2px solid;
   background-color: rgba(195, 248, 255, 0.4);
   border-radius: 10%;

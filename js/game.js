@@ -1,6 +1,7 @@
 /*-------------------------------- Constants --------------------------------*/
-const music = new Audio("assets/background-music.mp3")
-const soundEffect = new Audio("assets/token-sound.mp3")
+const music = new Audio("./audio/background-music.mp3")
+const soundEffect = new Audio("./audio/token-sound.mp3")
+const winSound = new Audio("./audio/win.mp3")
 const chimmy = '<img src="./assets/chimmy.png" style="width:60px">'
 const cooky = '<img src="./assets/cooky.png" style="width:60px">'
 const mang = '<img src="./assets/mang.png" style="width:60px">'
@@ -100,9 +101,14 @@ function render() {
     hintMsg.textContent = "It's a tie!"
   } else {
     hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
+    confetti.start(2000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"
     }
+    if(playing){
+      music.pause()
+    }
+    winSound.play()
   }
 }
 

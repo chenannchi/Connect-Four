@@ -13,6 +13,7 @@
 - **Getting Started**: 
 
   - [Press here to play the game!](https://anchi-chen-connect-four.netlify.app/)
+  - [Wireframe of the game](https://whimsical.com/connect-four-QJ5WbjE7F7341Jxuo5WuVq)
   - If you are not familiar with Connect Four, please read the rules carefully and then press next button on the bottom of the page.
   - Next, please enter the names of two players and press the enter buttons.
   - If you would like some sound effects or background music, make sure to turn on the audio by **clicking the audio icon** above!

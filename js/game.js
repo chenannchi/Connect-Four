@@ -3,20 +3,14 @@ const music = new Audio("./audio/background-music.mp3")
 const soundEffect = new Audio("./audio/token-sound.mp3")
 const winSound = new Audio("./audio/win.mp3")
 const chimmy = '<img src="./assets/chimmy.png">'
-// const cooky = '<img src="./assets/cooky.png" style="width:60px">'
-// const mang = '<img src="./assets/mang.png" style="width:60px">'
-// const rj = '<img src="./assets/rj.png" style="width:60px">'
 const shooky = '<img src="./assets/shooky.png">'
 const rows = 6, cols = 7
 
+soundEffect.volume = 0.4
 
 /*---------------------------- Variables (state) ----------------------------*/
-let board, turn, winner, themeColor, name1, name2
-let playing = 0
-let player1 = chimmy, player2 = shooky
-let winningCombo = []
-
-soundEffect.volume = 0.4
+let board, turn, winner, name1, name2
+let playing = 0, player1 = chimmy, player2 = shooky, winningCombo = []
 
 /*------------------------ Cached Element References ------------------------*/
 let boardEl = document.querySelector("#game-board")
@@ -32,6 +26,7 @@ let name1SubmitBtn = document.getElementById("name1Submit")
 let name2SubmitBtn = document.getElementById("name2Submit")
 let askNameEl = document.getElementById("askToEnterName")
 let colEls = document.querySelectorAll(".column")
+
 /*----------------------------- Event Listeners -----------------------------*/
 name1SubmitBtn.addEventListener("click",function(){
   name1 = name1El.value
@@ -39,9 +34,6 @@ name1SubmitBtn.addEventListener("click",function(){
   askNameEl.style.animation = "bounce 1s"
   name1El.hidden = true
   name1SubmitBtn.hidden = true
-  // let nameContent1 = document.createElement("div")
-  // nameContent1.textContent = name1
-  // document.se
   document.getElementById("nameContent1").textContent = `Player 1: ${name1}`
 })
 
@@ -74,16 +66,12 @@ restartBtn.addEventListener("click", init)
 homeBtn.addEventListener("click", init)
 
 /*-------------------------------- Functions --------------------------------*/
-// init()
-
 function init() {
   if (playing){
     music.play()
   }
   boardEl.hidden = false
   restartBtn.hidden = false
-  // homeBtn.hidden = false
-  // hintMsg.textContent = "Two players, please enter your name:"
   hintMsg.hidden = false
   hintMsg.style.animation = null
 
@@ -134,20 +122,14 @@ function render() {
     })
   });
 
-  // name1 = name1El.value
-  // name2 = name2El.value
-
   if (winner === null) {
-    // hintMsg.textContent = `${turn === 1 ? "Player1" : "Player2"}, it's your turn!`
     hintMsg.textContent = `${turn === 1 ? name1 : name2}, it's your turn!`
   } else if (winner === "T") {
     hintMsg.textContent = "It's a tie!"
     colEls.forEach((col)=>{
       col.classList.remove("columnhover")
     })
-    // boardEl.hidden = true
   } else {
-    // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
     hintMsg.textContent = `Congrats, ${winner === 1 ? name1 : name2} wins !!!!!`
     hintMsg.style.animation = "swing 2s"
 
@@ -164,7 +146,6 @@ function render() {
     colEls.forEach((col)=>{
       col.classList.remove("columnhover")
     })
-    // boardEl.hidden = true
   }
 
 

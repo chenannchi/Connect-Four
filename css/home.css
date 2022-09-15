@@ -11,9 +11,78 @@ html {
   box-sizing: inherit;
 }
 
+body{
+  margin:auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:100vh;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/260/047/original/holographic-fantasy-rainbow-unicorn-background-with-clouds-hearts-and-stars-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector.jpg");
+  font-family: 'Caveat', cursive;
+}
+
+#game-info{
+  width: 80vw;
+  background-color: rgba(37, 109, 133, 0.5);
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  color: white;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div{
+  width:50px;
+  margin:5px;
+  border: black solid 2px;
+}
+
+#next-btn{
+  background-color: skyblue;
+  color:navy;
+  font-size: 20px;
+  margin:20px;
+}
+
+#next-btn:hover{
+  background-color: aquamarine;
+  border: aquamarine;
+}
+
+h1{
+  color:#FFF6BF;
+  text-shadow: 2px 2px #C98474;
+  font-size: 30px;
+  animation: bounce 10s;
+  animation-iteration-count: infinite;
+}
+
+h2{
+  color:#A0D995;
+  font-size: 25px;
+  text-shadow: 2px 2px #1C6758;
+}
+
+h3{
+  color:#FFB3B3;
+  font-size: 20px;
+  text-decoration:underline;
+  text-shadow: 1px 1px #B93160;
+}
+
+p{
+  text-shadow: 2px 2px black;
+  font-size: 17px;
+  text-align: center;
+}
 
 @media only screen and (min-width:1024px){
-  body{
+  /* body{
     margin:auto 0;
     display: flex;
     justify-content: center;
@@ -22,7 +91,7 @@ html {
     height:100vh;
     background-image: url("https://static.vecteezy.com/system/resources/previews/005/260/047/original/holographic-fantasy-rainbow-unicorn-background-with-clouds-hearts-and-stars-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector.jpg");
     font-family: 'Caveat', cursive;
-  }
+  } */
   
   #game-info{
     width: 70vw;
@@ -38,39 +107,39 @@ html {
     flex-direction: column;
   }
   
-  ul{
+  /* ul{
     padding:0;
     display: flex;
     justify-content: center;
-  }
+  } */
   
-  div{
+  /* div{
     width:50px;
     margin:5px;
     border: black solid 2px;
-  }
+  } */
   
-  #token-color{
+  /* #token-color{
     margin:2px;
     color:black;
     text-align: center;
     list-style: none;
-  }
+  } */
   
-  #token-color div{
+  /* #token-color div{
     background-color:skyblue;  
-  }
+  } */
   
-  #theme-color{
+  /* #theme-color{
     margin:2px;
     color:black;
     text-align: center;
     list-style: none;
-  }
+  } */
   
-  #theme-color div{
+  /* #theme-color div{
     background-color: pink;
-  }
+  } */
   
   /* #start-btn{
     background-color: rgb(50, 194, 93);
@@ -82,58 +151,50 @@ html {
     color:white;
   } */
   
-  section.board div{
+  /* section.board div{
     width:20px;
     height:20px;
-  }
+  } */
   
-  #next-btn{
+  /* #next-btn{
     background-color: skyblue;
     color:navy;
     font-size: 20px;
     margin:20px;
-  }
+  } */
   
-  #next-btn:hover{
+  /* #next-btn:hover{
     background-color: aquamarine;
     border: aquamarine;
-  }
+  } */
   
   h1{
-    color:#FFF6BF;
-    text-shadow: 2px 2px #C98474;
+    /* color:#FFF6BF; */
+    /* text-shadow: 2px 2px #C98474; */
     font-size: 50px;
-    animation: bounce 10s;
+    /* animation: bounce 10s; */
     /* animation-fill-mode: forwards;  */
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
   }
   
   
   h2{
-    color:#A0D995;
+    /* color:#A0D995; */
     font-size: 40px;
-    text-shadow: 2px 2px #1C6758;
+    /* text-shadow: 2px 2px #1C6758; */
   }
   
   h3{
-    color:#FFB3B3;
-    font-size: 30px;
-    text-decoration:underline;
-    text-shadow: 1px 1px #B93160;
+    /* color:#FFB3B3; */
+    font-size: 40px;
+    /* text-decoration:underline;
+    text-shadow: 1px 1px #B93160; */
   }
   
   p{
-    text-shadow: 2px 2px black;
+    /* text-shadow: 2px 2px black; */
     font-size: 25px;
-    text-align: center;
-  }
-  
-  @media only screen and (min-width:1024px) {
-    section.board {
-      display: grid;
-      grid-template-rows: repeat(6,vh);
-      grid-template-columns: repeat(7, 14vw);
-    }
+    /* text-align: center; */
   }
 }
 

@@ -77,6 +77,9 @@ homeBtn.addEventListener("click", init)
 // init()
 
 function init() {
+  if (playing){
+    music.play()
+  }
   boardEl.hidden = false
   restartBtn.hidden = false
   // homeBtn.hidden = false
@@ -152,6 +155,7 @@ function render() {
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"
     }
+
     if(playing){
       music.pause()
       winSound.play()

@@ -163,12 +163,14 @@ h2 {
   animation-iteration-count: 2;
 }
 
-.playerName{
+#player1Name,
+#player2Name{
   border-radius: 10px;
   border-color:pink;
 }
 
-.nameSubmit{
+#name1Submit,
+#name2Submit{
   background-color: #9f3cd1;
   border-color: #9f3cd1;
 }

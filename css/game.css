@@ -23,14 +23,15 @@ body {
   font-family: 'Caveat', cursive;
 }
 
-.columnhover:hover{
-  background-color: #916BBF;
-  border-radius: 20px;
+img{
+  width: 20px;
+  height:20px;
+  vertical-align:top;
 }
 
 #audio{
-  height: 80px;
-  width: 80px;
+  height: 30px;
+  width: 30px;
 }
 
 #game-section{
@@ -43,7 +44,6 @@ body {
 #player2-info{
   order:1;
 }
-
 
 .square{
   border-radius: 50%;
@@ -61,18 +61,16 @@ body {
 h1{
   color:#FFF6BF;
   text-shadow: 2px 2px #C98474;
-  font-size: 50px;
+  font-size: 30px;
   animation: bounce 2s;
   animation-iteration-count: 1;
 }
 
 h2{
   color:#fcf9f8;
-  /* color:pink; */
-  font-size: 40px;
+  font-size: 28px;
   text-shadow: 2px 2px #7A4495;
 }
-
 
 .blank {
   border: black 2px solid;
@@ -82,22 +80,27 @@ h2{
 
 .board {
   display: grid;
-  grid-template-columns: repeat(7, 70px);
-  margin: 20px;
+  grid-template-columns: repeat(7, 30px);
+  margin: 10px;
   border: rgb(100, 92, 170) 2px solid;
   background-color: rgba(195, 248, 255, 0.4);
   border-radius: 10%;
-  padding:10px;
-  box-shadow:5px 10px rgb(100, 92, 170);
-}
-
-#askToEnterName{
-  margin: 60px 0;
+  padding:5px;
+  box-shadow:2px 5px rgb(100, 92, 170);
 }
 
 .column {
   display: grid;
-  grid-template-rows: repeat(6, 70px);
+  grid-template-rows: repeat(6, 30px);
+}
+
+#askToEnterName{
+  margin: 20px 0;
+}
+
+.columnhover:hover{
+  background-color: #916BBF;
+  border-radius: 20px;
 }
 
 .player1 {
@@ -114,21 +117,16 @@ h2{
 
 #nameContent1{
   color:skyblue;
-  /* color: rgb(16, 86, 95); */
   font-weight: bolder;
-  font-size: 40px;
-  text-shadow: 2px 2px blue;
-  /* background-color: skyblue; */
-  /* border-radius: 50%; */
-  /* padding: 20px; */
-
+  font-size: 20px;
+  text-shadow: 1px 1px blue;
 }
 
 #nameContent2{
   color: rgb(236, 153, 167);
   font-weight: bolder;
-  font-size: 40px;
-  text-shadow: 2px 2px rgb(96, 9, 136);  
+  font-size: 20px;
+  text-shadow: 1px 1px rgb(96, 9, 136);  
 }
 
 #btns {
@@ -138,7 +136,7 @@ h2{
 
 .btn {
   margin: 5px;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 #restart-btn{
@@ -146,16 +144,71 @@ h2{
 }
 
 #restart-btn:hover,
-#home-btn:hover{
-  background-color: rgba(195, 248, 255, 0.4);
-  color:black;
-}
+  #home-btn:hover{
+    background-color: rgba(195, 248, 255, 0.4);
+    color:black;
+  }
+  
+  #home-btn{
+    background-color: navy;
+  }
+  
+  #hint-msg{
+    animation: flash 2s;
+    animation-iteration-count: 2;
+  }
 
-#home-btn{
-  background-color: navy;
-}
+@media only screen and (min-width:1024px){
+  img{
+    width:60px;
+    height:60px;
+  }
 
-#hint-msg{
-  animation: flash 2s;
-  animation-iteration-count: 2;
+  #audio{
+    height: 80px;
+    width: 80px;
+  }
+  
+  h1{
+    font-size: 50px;
+  }
+  
+  h2{
+    font-size: 40px;
+  }
+  
+  .board {
+    grid-template-columns: repeat(7, 70px);
+    margin: 20px;
+    padding:10px;
+    box-shadow:5px 10px rgb(100, 92, 170);
+  }
+
+  .column {
+    grid-template-rows: repeat(6, 70px);
+  }
+
+  #askToEnterName{
+    margin: 60px 0;
+  }
+
+  .player2 {
+    border: black 2px solid;
+    margin: 2px;
+    background-color: rgb(238, 105, 131);
+  } */
+  
+  #nameContent1{
+    font-size: 40px;
+    text-shadow: 2px 2px blue;
+  }
+  
+  #nameContent2{
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(96, 9, 136);  
+  }
+  
+  .btn {
+    font-size: 20px;
+  }
 }

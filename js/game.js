@@ -2,11 +2,11 @@
 const music = new Audio("./audio/background-music.mp3")
 const soundEffect = new Audio("./audio/token-sound.mp3")
 const winSound = new Audio("./audio/win.mp3")
-const chimmy = '<img src="./assets/chimmy.png" style="width:60px">'
-const cooky = '<img src="./assets/cooky.png" style="width:60px">'
-const mang = '<img src="./assets/mang.png" style="width:60px">'
-const rj = '<img src="./assets/rj.png" style="width:60px">'
-const shooky = '<img src="./assets/shooky.png" style="width:60px">'
+const chimmy = '<img src="./assets/chimmy.png">'
+// const cooky = '<img src="./assets/cooky.png" style="width:60px">'
+// const mang = '<img src="./assets/mang.png" style="width:60px">'
+// const rj = '<img src="./assets/rj.png" style="width:60px">'
+const shooky = '<img src="./assets/shooky.png">'
 const rows = 6, cols = 7
 
 

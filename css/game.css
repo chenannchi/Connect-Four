@@ -10,7 +10,7 @@ body {
   font-family: 'Caveat', cursive;
 }
 
-.column:hover{
+.columnhover:hover{
   background-color: #916BBF;
   border-radius: 20px;
 }
@@ -100,10 +100,14 @@ h2{
 
 #nameContent1{
   color:skyblue;
+  /* color: rgb(16, 86, 95); */
   font-weight: bolder;
   font-size: 40px;
   text-shadow: 2px 2px blue;
-  /* -webkit-text-stroke: 1px rgb(37, 49, 109); */
+  /* background-color: skyblue; */
+  /* border-radius: 50%; */
+  /* padding: 20px; */
+
 }
 
 #nameContent2{
@@ -111,7 +115,6 @@ h2{
   font-weight: bolder;
   font-size: 40px;
   text-shadow: 2px 2px rgb(96, 9, 136);  
-  /* -webkit-text-stroke: 1px darkred; */
 }
 
 #btns {

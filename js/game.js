@@ -31,6 +31,7 @@ let name2El = document.getElementById("player2Name")
 let name1SubmitBtn = document.getElementById("name1Submit")
 let name2SubmitBtn = document.getElementById("name2Submit")
 let askNameEl = document.getElementById("askToEnterName")
+let colEls = document.querySelectorAll(".column")
 /*----------------------------- Event Listeners -----------------------------*/
 // document.getElementById("timer").addEventListener("click", function () {
 //   console.log("timer clicked")
@@ -128,13 +129,16 @@ function render() {
 
   if (winner === null) {
     // hintMsg.textContent = `${turn === 1 ? "Player1" : "Player2"}, it's your turn!`
-    // console.log(name1)
     hintMsg.textContent = `${turn === 1 ? name1 : name2}, it's your turn!`
   } else if (winner === "T") {
     hintMsg.textContent = "It's a tie!"
+    colEls.forEach((col)=>{
+      col.classList.remove("columnhover")
+    })
+    boardEl.hidden = true
   } else {
     // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
-    hintMsg.textContent = `${winner === 1 ? name1 : name2} wins!!!!!`
+    hintMsg.textContent = `${winner === 1 ? name1 : name2} wins !!!!!`
     confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"
@@ -143,6 +147,10 @@ function render() {
       music.pause()
     }
     winSound.play()
+    colEls.forEach((col)=>{
+      col.classList.remove("columnhover")
+    })
+    boardEl.hidden = true
   }
 
 
@@ -150,7 +158,7 @@ function render() {
 
 function handleClick(evt) {
   let placeCol = evt.target.id[evt.target.id.length-1]
-  if (board[placeCol].includes(null)!==true) {
+  if (board[placeCol].includes(null) === false) {
     return
   } else if (winner !== null) {
     return

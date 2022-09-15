@@ -8,6 +8,8 @@
 
   - The reason why I chose the game is because this is the game I am most familiar with in the game list. Besides, starting this course with little knowledge of HTML, CSS, and JS, I believe building a Connect Four game will definitely help me lay my foundation of front-end skills and knowledge.  
 
+<br/>
+
 - **Getting Started**: 
 
   - [Press here to play the game!](https://anchi-chen-connect-four.netlify.app/)
@@ -17,21 +19,38 @@
   - The game will **start from player 1**.
   - The last but not the least, good luck!
 
+<br/>
+
 - **Screenshot(s):** 
+<br/>
   - Home Page in Large Screen<br/>
+  <br/>
     - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 
-  - Name Page in Large Screen
+  <br/>
+
+  - Name Page in Large Screen<br/>
+  <br/>
     - <img src="./assets/name_page_screenshot.png" alt="drawing" width="600"/>
 
-  - Game Page in Large Screen
+  <br/>
+
+  - Game Page in Large Screen<br/>
+  <br/>
     - <img src="./assets/game_page_screenshot.png" alt="drawing" width="600"/>
 
-  - Home Page in small Screen / Name Page in small Screen / Game Page in small Screen
+  <br/>
+
+  - Home Page in small Screen / Name Page in small Screen / Game Page in small Screen<br/>
+  <br/>
     - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="200" height="500"/>
 
+<br/>
 
-- **Technologies Used**: HTML, CSS, JS.
+- **Technologies Used**: 
+  - HTML, CSS, JS.
+
+<br/>
 
 - **Next Steps**: 
 
@@ -39,6 +58,8 @@
   - Let the player enter their name at different page from the game page.
   - Set a timer for adding the token in certain time.
   - Add history record, including players' names, time cost to win, date, the count of winning and losing, etc.
+
+<br/>
 
 - **credential**:
 

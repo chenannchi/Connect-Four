@@ -46,9 +46,9 @@ img {
 }
 
 #player1-info{
-  border: skyblue 2px solid;
+  border: rgb(135, 206, 235) 2px solid;
   border-radius: 20%;
-  background-color: skyblue;
+  background-color: rgba(137, 207, 235, 0.5);
   padding: 10px;
   margin: 5px;
   box-shadow: 2px 2px #551c83;
@@ -56,9 +56,9 @@ img {
 
 #player2-info {
   order: 1;
-  border: lightpink 2px solid;
+  border: rgb(255, 182, 193) 2px solid;
   border-radius: 20%;
-  background-color: lightpink;
+  background-color: rgba(245, 110, 130, 0.3);
   padding: 10px;
   margin: 5px;
   box-shadow: 2px 2px #551c83;

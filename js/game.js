@@ -111,13 +111,17 @@ function render() {
         selectSqEl.classList.add("player1")
         selectSqEl.innerHTML = player1
         selectSqEl.style.animation = "bounce 0.1s"
-        soundEffect.play()
+        if(playing){
+          soundEffect.play()
+        }
       } else if (square === -1) {
         selectSqEl.classList.remove("blank")
         selectSqEl.classList.add("player2")
         selectSqEl.innerHTML = player2
         selectSqEl.style.animation = "bounce 0.1s"
-        soundEffect.play()
+        if(playing){
+          soundEffect.play()
+        }
       } else {
         selectSqEl.classList.add("blank")
       }
@@ -138,15 +142,16 @@ function render() {
     // boardEl.hidden = true
   } else {
     // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
-    hintMsg.textContent = `${winner === 1 ? name1 : name2} wins !!!!!`
+    hintMsg.textContent = `Congrats, ${winner === 1 ? name1 : name2} wins !!!!!`
     confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"
     }
     if(playing){
       music.pause()
+      winSound.play()
     }
-    winSound.play()
+    
     colEls.forEach((col)=>{
       col.classList.remove("columnhover")
     })

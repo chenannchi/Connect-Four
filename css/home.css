@@ -82,119 +82,25 @@ p{
 }
 
 @media only screen and (min-width:1024px){
-  /* body{
-    margin:auto 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height:100vh;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/005/260/047/original/holographic-fantasy-rainbow-unicorn-background-with-clouds-hearts-and-stars-pastel-color-sky-magical-landscape-abstract-fabulous-pattern-cute-candy-wallpaper-vector.jpg");
-    font-family: 'Caveat', cursive;
-  } */
-  
   #game-info{
     width: 70vw;
-    background-color: rgba(37, 109, 133, 0.5);
-    border-radius: 20px;
     padding: 15px;
     margin-top: 20px;
-    color: white;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
-  
-  /* ul{
-    padding:0;
-    display: flex;
-    justify-content: center;
-  } */
-  
-  /* div{
-    width:50px;
-    margin:5px;
-    border: black solid 2px;
-  } */
-  
-  /* #token-color{
-    margin:2px;
-    color:black;
-    text-align: center;
-    list-style: none;
-  } */
-  
-  /* #token-color div{
-    background-color:skyblue;  
-  } */
-  
-  /* #theme-color{
-    margin:2px;
-    color:black;
-    text-align: center;
-    list-style: none;
-  } */
-  
-  /* #theme-color div{
-    background-color: pink;
-  } */
-  
-  /* #start-btn{
-    background-color: rgb(50, 194, 93);
-    margin:20px;
-  }
-  
-  #start-link{
-    text-decoration: none;
-    color:white;
-  } */
-  
-  /* section.board div{
-    width:20px;
-    height:20px;
-  } */
-  
-  /* #next-btn{
-    background-color: skyblue;
-    color:navy;
-    font-size: 20px;
-    margin:20px;
-  } */
-  
-  /* #next-btn:hover{
-    background-color: aquamarine;
-    border: aquamarine;
-  } */
   
   h1{
-    /* color:#FFF6BF; */
-    /* text-shadow: 2px 2px #C98474; */
     font-size: 50px;
-    /* animation: bounce 10s; */
-    /* animation-fill-mode: forwards;  */
-    /* animation-iteration-count: infinite; */
   }
   
-  
   h2{
-    /* color:#A0D995; */
     font-size: 40px;
-    /* text-shadow: 2px 2px #1C6758; */
   }
   
   h3{
-    /* color:#FFB3B3; */
     font-size: 40px;
-    /* text-decoration:underline;
-    text-shadow: 1px 1px #B93160; */
   }
   
   p{
-    /* text-shadow: 2px 2px black; */
     font-size: 25px;
-    /* text-align: center; */
   }
 }
-

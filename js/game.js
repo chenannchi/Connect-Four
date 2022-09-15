@@ -82,6 +82,8 @@ function init() {
   // homeBtn.hidden = false
   // hintMsg.textContent = "Two players, please enter your name:"
   hintMsg.hidden = false
+  hintMsg.style.animation = null
+
   board = new Array(7).fill(null)
   for (let i = 0; i < 7; i++) {
     board[i] = new Array(6).fill(null)
@@ -145,6 +147,7 @@ function render() {
     // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
     hintMsg.textContent = `Congrats, ${winner === 1 ? name1 : name2} wins !!!!!`
     hintMsg.style.animation = "swing 2s"
+
     confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"

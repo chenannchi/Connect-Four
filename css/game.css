@@ -45,8 +45,23 @@ img {
   width: 95vw;
 }
 
+#player1-info{
+  border: skyblue 2px solid;
+  border-radius: 20%;
+  background-color: skyblue;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px #551c83;
+}
+
 #player2-info {
   order: 1;
+  border: lightpink 2px solid;
+  border-radius: 20%;
+  background-color: lightpink;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 2px 2px #551c83;
 }
 
 .square {
@@ -120,21 +135,26 @@ h2 {
   background-color: rgb(238, 105, 131);
 }
 
-#nameContent1 {
+#nameContent1,
+#token-msg1 {
   color: rgb(14, 66, 179);
   font-weight: bolder;
   font-size: 20px;
   text-shadow: 1px 1px white;
-
 }
 
-#nameContent2 {
+#nameContent2,
+#token-msg2 {
   color:#c90963;
   font-weight: bolder;
   font-size: 20px;
   text-shadow: 1px 1px white;
-
 }
+
+/* 
+#token-msg{
+  margin:10px;
+} */
 
 #btns {
   display: flex;
@@ -175,6 +195,11 @@ h2 {
 #name2Submit{
   background-color: #9f3cd1;
   border-color: #9f3cd1;
+}
+
+.token{
+  width: 50px;
+  height:50px;
 }
 
 @media only screen and (min-width: 768px){
@@ -231,5 +256,10 @@ h2 {
   .btn {
     font-size: 20px;
     margin: 10px;
+  }
+
+  .token{
+    width: 60px;
+    height: 60px;
   }
 }

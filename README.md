@@ -24,25 +24,21 @@
 - **Screenshot(s):** 
 <br/>
   - Home Page in Large Screen<br/>
-  <br/>
     - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 
   <br/>
 
   - Name Page in Large Screen<br/>
-  <br/>
     - <img src="./assets/name_page_screenshot.png" alt="drawing" width="600"/>
 
   <br/>
 
   - Game Page in Large Screen<br/>
-  <br/>
     - <img src="./assets/game_page_screenshot.png" alt="drawing" width="600"/>
 
   <br/>
 
   - Home Page in small Screen / Name Page in small Screen / Game Page in small Screen<br/>
-  <br/>
     - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="200" height="500"/>
 
 <br/>

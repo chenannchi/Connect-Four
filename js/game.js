@@ -90,6 +90,11 @@ function init() {
   for (let i = 0; i < 7; i++) {
     board[i] = new Array(6).fill(null)
   }
+
+  colEls.forEach((col)=>{
+    col.classList.add("columnhover")
+  })
+
   for(let i = 0;i < 42;i++){
     squareEls[i].textContent = ""
     squareEls[i].setAttribute("class","blank")

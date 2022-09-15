@@ -32,7 +32,7 @@
 
   - Home Page in small Screen / Name Page in small Screen / Game Page in small Screen
     <!-- - ![Home Page in small Screen](./assets/home_page_small_screenshot.png) -->
-    - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="250" height="500"/> <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="250" height="500"/> <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="250" height="500"/>
+    - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="200" height="500"/>
 
 
   <!-- - Name Page in small Screen -->

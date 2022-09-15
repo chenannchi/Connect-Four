@@ -20,22 +20,28 @@
 - **Screenshot(s):** 
   - Home Page in Large Screen<br/>
     <!-- - ![Home Page in Large Screen](./assets/home_page_screenshot.png) -->
-    - <img src="./assets/home_page_screenshot.png" alt="drawing" width="800"/>
+    - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 
   - Name Page in Large Screen
-    - ![Name Page in Large Screen](./assets/name_page_screenshot.png)
+    <!-- - ![Name Page in Large Screen](./assets/name_page_screenshot.png) -->
+    - <img src="./assets/name_page_screenshot.png" alt="drawing" width="600"/>
 
   - Game Page in Large Screen
-    - ![Game Page in Large Screen](./assets/game_page_screenshot.png)
+    <!-- - ![Game Page in Large Screen](./assets/game_page_screenshot.png) -->
+    - <img src="./assets/game_page_screenshot.png" alt="drawing" width="600"/>
 
-  - Home Page in small Screen
+  - Home Page in small Screen / Name Page in small Screen / Game Page in small Screen
     <!-- - ![Home Page in small Screen](./assets/home_page_small_screenshot.png) -->
-    - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="300"/>
-  - Name Page in small Screen
-    - ![Name Page in small Screen](./assets/name_page_small_screenshot.png)
+    - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="250" height="500"/> <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="250" height="500"/> <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="250" height="500"/>
 
-  - Game Page in small Screen
-    - ![Game Page in small Screen](./assets/game_page_small_screenshot.png)
+
+  <!-- - Name Page in small Screen -->
+    <!-- - ![Name Page in small Screen](./assets/name_page_small_screenshot.png) -->
+    <!-- - <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="250"/> -->
+
+  <!-- - Game Page in small Screen -->
+    <!-- - ![Game Page in small Screen](./assets/game_page_small_screenshot.png) -->
+    <!-- - <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="250"/> -->
 
 
 - **Technologies Used**: HTML, CSS, JS.

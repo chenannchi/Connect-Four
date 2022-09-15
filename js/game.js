@@ -34,7 +34,7 @@ name1SubmitBtn.addEventListener("click",function(){
   askNameEl.style.animation = "bounce 1s"
   name1El.hidden = true
   name1SubmitBtn.hidden = true
-  document.getElementById("nameContent1").textContent = `Player 1: ${name1}`
+  document.getElementById("nameContent1").textContent = name1+", "
 })
 
 name2SubmitBtn.addEventListener("click",function(){
@@ -42,7 +42,7 @@ name2SubmitBtn.addEventListener("click",function(){
   askNameEl.hidden = true
   name2El.hidden = true
   name2SubmitBtn.hidden = true
-  document.getElementById("nameContent2").textContent = `Player 2: ${name2}`
+  document.getElementById("nameContent2").textContent = name2 + ", "
   init()
 })
 

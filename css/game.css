@@ -71,9 +71,9 @@ h1 {
 }
 
 h2 {
-  color: #fcf9f8;
+  color: #551c83;
   font-size: 28px;
-  text-shadow: 2px 2px #7A4495;
+  text-shadow: 2px 2px white;
 }
 
 .blank {
@@ -121,17 +121,19 @@ h2 {
 }
 
 #nameContent1 {
-  color: skyblue;
+  color: rgb(14, 66, 179);
   font-weight: bolder;
   font-size: 20px;
-  text-shadow: 1px 1px blue;
+  text-shadow: 1px 1px white;
+
 }
 
 #nameContent2 {
-  color: rgb(236, 153, 167);
+  color:#c90963;
   font-weight: bolder;
   font-size: 20px;
-  text-shadow: 1px 1px rgb(96, 9, 136);
+  text-shadow: 1px 1px white;
+
 }
 
 #btns {
@@ -220,71 +222,14 @@ h2 {
 
   #nameContent1 {
     font-size: 40px;
-    text-shadow: 2px 2px blue;
   }
 
   #nameContent2 {
     font-size: 40px;
-    text-shadow: 2px 2px rgb(96, 9, 136);
   }
 
   .btn {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 10px;
   }
 }
-
-/* @media only screen and (min-width:1024px) {
-  img {
-    width: 60px;
-    height: 60px;
-  }
-
-  #audio {
-    height: 60px;
-    width: 60px;
-  }
-
-  h1 {
-    font-size: 50px;
-    margin: 20px;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  .board {
-    grid-template-columns: repeat(7, 70px);
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 5px 10px rgb(100, 92, 170);
-  }
-
-  .column {
-    grid-template-rows: repeat(6, 70px);
-  }
-
-  #game-section {
-    flex-direction: row;
-  }
-
-  #askToEnterName {
-    margin: 60px 0;
-  }
-
-  #nameContent1 {
-    font-size: 40px;
-    text-shadow: 2px 2px blue;
-  }
-
-  #nameContent2 {
-    font-size: 40px;
-    text-shadow: 2px 2px rgb(96, 9, 136);
-  }
-
-  .btn {
-    font-size: 20px;
-    margin: 10px 0;
-  }
-} */

@@ -46,6 +46,10 @@ img {
 }
 
 #player1-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border: rgb(135, 206, 235) 2px solid;
   border-radius: 20%;
   background-color: rgba(137, 207, 235, 0.5);
@@ -55,6 +59,10 @@ img {
 }
 
 #player2-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   order: 1;
   border: rgb(255, 182, 193) 2px solid;
   border-radius: 20%;
@@ -123,16 +131,27 @@ h2 {
   border-radius: 20px;
 }
 
-.player1 {
+.player1,
+#token1-background {
   border: black 2px solid;
   margin: 2px;
   background-color: rgb(37, 49, 109);
 }
 
-.player2 {
+.player2,
+#token2-background {
   border: black 2px solid;
   margin: 2px;
   background-color: rgb(238, 105, 131);
+}
+
+#token1-background,
+#token2-background{
+  width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #nameContent1,
@@ -150,11 +169,6 @@ h2 {
   font-size: 20px;
   text-shadow: 1px 1px white;
 }
-
-/* 
-#token-msg{
-  margin:10px;
-} */
 
 #btns {
   display: flex;

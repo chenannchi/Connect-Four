@@ -66,6 +66,8 @@ restartBtn.addEventListener("click", init)
 homeBtn.addEventListener("click", init)
 
 /*-------------------------------- Functions --------------------------------*/
+
+
 function init() {
   if (playing){
     music.play()

@@ -19,29 +19,16 @@
 
 - **Screenshot(s):** 
   - Home Page in Large Screen<br/>
-    <!-- - ![Home Page in Large Screen](./assets/home_page_screenshot.png) -->
     - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 
   - Name Page in Large Screen
-    <!-- - ![Name Page in Large Screen](./assets/name_page_screenshot.png) -->
     - <img src="./assets/name_page_screenshot.png" alt="drawing" width="600"/>
 
   - Game Page in Large Screen
-    <!-- - ![Game Page in Large Screen](./assets/game_page_screenshot.png) -->
     - <img src="./assets/game_page_screenshot.png" alt="drawing" width="600"/>
 
   - Home Page in small Screen / Name Page in small Screen / Game Page in small Screen
-    <!-- - ![Home Page in small Screen](./assets/home_page_small_screenshot.png) -->
     - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="200" height="500"/> <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="200" height="500"/>
-
-
-  <!-- - Name Page in small Screen -->
-    <!-- - ![Name Page in small Screen](./assets/name_page_small_screenshot.png) -->
-    <!-- - <img src="./assets/name_page_small_screenshot.png" alt="drawing" width="250"/> -->
-
-  <!-- - Game Page in small Screen -->
-    <!-- - ![Game Page in small Screen](./assets/game_page_small_screenshot.png) -->
-    <!-- - <img src="./assets/game_page_small_screenshot.png" alt="drawing" width="250"/> -->
 
 
 - **Technologies Used**: HTML, CSS, JS.
@@ -57,7 +44,7 @@
 
   - Icons from [ICONS8](https://icons8.com/).
 
-  - Music and sound effect from [PIXABAY](https://pixabay.com/)(https://pixabay.com/sound-effects/stone-dropping-6843/).
+  - Music and sound effect from [PIXABAY](https://pixabay.com/).
 
   - Background image from [Vecteezy](https://www.vecteezy.com/).
 

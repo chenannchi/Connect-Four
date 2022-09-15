@@ -18,9 +18,9 @@
   - The last but not the least, good luck!
 
 - **Screenshot(s):** 
-
   - Home Page in Large Screen<br/>
-    - ![Home Page in Large Screen](./assets/home_page_screenshot.png)
+    <!-- - ![Home Page in Large Screen](./assets/home_page_screenshot.png) -->
+    - <img src="./assets/home_page_screenshot.png" alt="drawing" width="800"/>
 
   - Name Page in Large Screen
     - ![Name Page in Large Screen](./assets/name_page_screenshot.png)
@@ -29,8 +29,8 @@
     - ![Game Page in Large Screen](./assets/game_page_screenshot.png)
 
   - Home Page in small Screen
-    - ![Home Page in small Screen](./assets/home_page_small_screenshot.png)
-
+    <!-- - ![Home Page in small Screen](./assets/home_page_small_screenshot.png) -->
+    - <img src="./assets/home_page_small_screenshot.png" alt="drawing" width="300"/>
   - Name Page in small Screen
     - ![Name Page in small Screen](./assets/name_page_small_screenshot.png)
 

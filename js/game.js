@@ -79,7 +79,7 @@ homeBtn.addEventListener("click", init)
 function init() {
   boardEl.hidden = false
   restartBtn.hidden = false
-  homeBtn.hidden = false
+  // homeBtn.hidden = false
   // hintMsg.textContent = "Two players, please enter your name:"
   hintMsg.hidden = false
   board = new Array(7).fill(null)

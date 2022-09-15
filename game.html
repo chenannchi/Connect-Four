@@ -28,13 +28,13 @@
   <div id="game-section">
     <div id="player1-info">
       <h4 id="nameContent1" class="nameContent">Player1,<br> please enter your name:</h4>
-      <input id="player1Name" type="text">
-      <button id="name1Submit" class="btn btn-primary" style="vertical-align:middle;padding:1px 8px">Enter</button>
+      <input class="playerName" type="text">
+      <button class="btn btn-primary nameSubmit" style="vertical-align:middle;padding:1px 8px">Enter</button>
     </div>
     <div id="player2-info">
       <h4 id="nameContent2">Player2,<br> please enter your name:</h4>
-      <input id="player2Name" type="text">
-      <button id="name2Submit" class="btn btn-primary" style="vertical-align:middle;padding:1px 8px">Enter</button>
+      <input class="playerName" type="text">
+      <button class="btn btn-primary nameSubmit" style="vertical-align:middle;padding:1px 8px">Enter</button>
     </div>
     <section class="board" id="game-board" hidden>
       <div id="col0" class="column columnhover">
@@ -100,7 +100,7 @@
   <div id="btns">
     <button id="restart-btn" class="btn btn-dark" hidden>Restart</button>
     <form action="./index.html">
-      <input id="home-btn" type="submit" value="Home" class="btn btn-secondary" hidden />
+      <input id="home-btn" type="submit" value="Home" class="btn btn-secondary" />
     </form>
   </div>
 </body>

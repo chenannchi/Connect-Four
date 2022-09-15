@@ -3,9 +3,12 @@ html {
 }
 
 /* The Universal Selector */
-*, /* All elements*/
-*::before, /* All ::before pseudo-elements */
-*::after { /* All ::after pseudo-elements */
+*,
+/* All elements*/
+*::before,
+/* All ::before pseudo-elements */
+*::after {
+  /* All ::after pseudo-elements */
   /* height & width will now include border & padding by default
      but can be over-ridden as needed */
   box-sizing: inherit;
@@ -23,51 +26,52 @@ body {
   font-family: 'Caveat', cursive;
 }
 
-img{
+img {
   width: 20px;
-  height:20px;
-  vertical-align:top;
+  height: 20px;
+  vertical-align: top;
 }
 
-#audio{
+#audio {
   height: 30px;
   width: 30px;
 }
 
-#game-section{
+#game-section {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   align-items: center;
   width: 95vw;
 }
 
-#player2-info{
-  order:1;
+#player2-info {
+  order: 1;
 }
 
-.square{
+.square {
   border-radius: 50%;
   text-align: center;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
-#function-bar{
+#function-bar {
   display: flex;
-  justify-content: center;
-  width:95vw;
-  margin: 30px;
+  justify-content: flex-end;
+  width: 95vw;
+  margin: 10px;
 }
 
-h1{
-  color:#FFF6BF;
+h1 {
+  color: #FFF6BF;
   text-shadow: 2px 2px #C98474;
   font-size: 30px;
   animation: bounce 2s;
   animation-iteration-count: 1;
 }
 
-h2{
-  color:#fcf9f8;
+h2 {
+  color: #fcf9f8;
   font-size: 28px;
   text-shadow: 2px 2px #7A4495;
 }
@@ -75,7 +79,7 @@ h2{
 .blank {
   border: black 2px solid;
   margin: 2px;
-  background-color: rgba(238, 105, 131,0.3);
+  background-color: rgba(238, 105, 131, 0.3);
 }
 
 .board {
@@ -85,8 +89,8 @@ h2{
   border: rgb(100, 92, 170) 2px solid;
   background-color: rgba(195, 248, 255, 0.4);
   border-radius: 10%;
-  padding:5px;
-  box-shadow:2px 5px rgb(100, 92, 170);
+  padding: 5px;
+  box-shadow: 2px 5px rgb(100, 92, 170);
 }
 
 .column {
@@ -94,12 +98,12 @@ h2{
   grid-template-rows: repeat(6, 30px);
 }
 
-#askToEnterName{
+#askToEnterName {
   margin: 20px 0;
   text-align: center;
 }
 
-.columnhover:hover{
+.columnhover:hover {
   background-color: #916BBF;
   border-radius: 20px;
 }
@@ -116,18 +120,18 @@ h2{
   background-color: rgb(238, 105, 131);
 }
 
-#nameContent1{
-  color:skyblue;
+#nameContent1 {
+  color: skyblue;
   font-weight: bolder;
   font-size: 20px;
   text-shadow: 1px 1px blue;
 }
 
-#nameContent2{
+#nameContent2 {
   color: rgb(236, 153, 167);
   font-weight: bolder;
   font-size: 20px;
-  text-shadow: 1px 1px rgb(96, 9, 136);  
+  text-shadow: 1px 1px rgb(96, 9, 136);
 }
 
 #btns {
@@ -140,76 +144,86 @@ h2{
   font-size: 10px;
 }
 
-#restart-btn{
+#restart-btn {
   background-color: #7A4495;
 }
 
 #restart-btn:hover,
-  #home-btn:hover{
-    background-color: rgba(195, 248, 255, 0.4);
-    color:black;
-  }
-  
-  #home-btn{
-    background-color: navy;
-  }
-  
-  #hint-msg{
-    animation: flash 2s;
-    animation-iteration-count: 2;
+#home-btn:hover {
+  background-color: rgba(195, 248, 255, 0.4);
+  color: black;
+}
+
+#home-btn {
+  background-color: navy;
+}
+
+#hint-msg {
+  animation: flash 2s;
+  animation-iteration-count: 2;
+}
+
+.playerName{
+  border-radius: 10px;
+  border-color:pink;
+}
+
+.nameSubmit{
+  background-color: #9f3cd1;
+  border-color: #9f3cd1;
+}
+
+@media only screen and (min-width:1024px) {
+  img {
+    width: 60px;
+    height: 60px;
   }
 
-@media only screen and (min-width:1024px){
-  img{
-    width:60px;
-    height:60px;
+  #audio {
+    height: 60px;
+    width: 60px;
   }
 
-  #audio{
-    height: 80px;
-    width: 80px;
-  }
-  
-  h1{
+  h1 {
     font-size: 50px;
+    margin: 20px;
   }
-  
-  h2{
+
+  h2 {
     font-size: 40px;
   }
-  
+
   .board {
     grid-template-columns: repeat(7, 70px);
     margin: 20px;
-    padding:10px;
-    box-shadow:5px 10px rgb(100, 92, 170);
+    padding: 10px;
+    box-shadow: 5px 10px rgb(100, 92, 170);
   }
 
   .column {
     grid-template-rows: repeat(6, 70px);
   }
 
-  #askToEnterName{
+  #game-section {
+    flex-direction: row;
+  }
+
+  #askToEnterName {
     margin: 60px 0;
   }
 
-  .player2 {
-    border: black 2px solid;
-    margin: 2px;
-    background-color: rgb(238, 105, 131);
-  }
-  
-  #nameContent1{
+  #nameContent1 {
     font-size: 40px;
     text-shadow: 2px 2px blue;
   }
-  
-  #nameContent2{
+
+  #nameContent2 {
     font-size: 40px;
-    text-shadow: 2px 2px rgb(96, 9, 136);  
+    text-shadow: 2px 2px rgb(96, 9, 136);
   }
-  
+
   .btn {
     font-size: 20px;
+    margin: 10px 0;
   }
 }

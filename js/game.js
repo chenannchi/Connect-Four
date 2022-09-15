@@ -33,10 +33,6 @@ let name2SubmitBtn = document.getElementById("name2Submit")
 let askNameEl = document.getElementById("askToEnterName")
 let colEls = document.querySelectorAll(".column")
 /*----------------------------- Event Listeners -----------------------------*/
-// document.getElementById("timer").addEventListener("click", function () {
-//   console.log("timer clicked")
-// })
-
 name1SubmitBtn.addEventListener("click",function(){
   name1 = name1El.value
   askNameEl.textContent = name1 + ", please wait for player 2 to enter name!"
@@ -46,7 +42,7 @@ name1SubmitBtn.addEventListener("click",function(){
   // let nameContent1 = document.createElement("div")
   // nameContent1.textContent = name1
   // document.se
-  document.getElementById("nameContent1").textContent = "Player 1:\n" + name1
+  document.getElementById("nameContent1").textContent = "Player 1:" + name1
 })
 
 name2SubmitBtn.addEventListener("click",function(){
@@ -54,7 +50,7 @@ name2SubmitBtn.addEventListener("click",function(){
   askNameEl.hidden = true
   name2El.hidden = true
   name2SubmitBtn.hidden = true
-  document.getElementById("nameContent2").textContent = "Player 2:\n" + name2
+  document.getElementById("nameContent2").textContent = "Player 2:" + name2
   init()
 })
 

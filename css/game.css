@@ -96,6 +96,7 @@ h2{
 
 #askToEnterName{
   margin: 20px 0;
+  text-align: center;
 }
 
 .columnhover:hover{
@@ -196,7 +197,7 @@ h2{
     border: black 2px solid;
     margin: 2px;
     background-color: rgb(238, 105, 131);
-  } */
+  }
   
   #nameContent1{
     font-size: 40px;

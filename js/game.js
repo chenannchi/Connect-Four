@@ -45,7 +45,7 @@ name1SubmitBtn.addEventListener("click",function(){
   // let nameContent1 = document.createElement("div")
   // nameContent1.textContent = name1
   // document.se
-  document.getElementById("nameContent1").textContent = "Name of the player 1:\n" + name1
+  document.getElementById("nameContent1").textContent = "Player 1:\n" + name1
 })
 
 name2SubmitBtn.addEventListener("click",function(){
@@ -53,7 +53,7 @@ name2SubmitBtn.addEventListener("click",function(){
   askNameEl.hidden = true
   name2El.hidden = true
   name2SubmitBtn.hidden = true
-  document.getElementById("nameContent2").textContent = "Name of the player 2:\n" + name2
+  document.getElementById("nameContent2").textContent = "Player 2:\n" + name2
   init()
 })
 
@@ -134,7 +134,7 @@ function render() {
     hintMsg.textContent = "It's a tie!"
   } else {
     // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
-    hintMsg.textContent = `${winner === 1 ? name1 : name2} win!!!!!`
+    hintMsg.textContent = `${winner === 1 ? name1 : name2} wins!!!!!`
     confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"

@@ -22,7 +22,6 @@
 <br/>
 
 - **Screenshot(s):** 
-<br/>
   - Home Page in Large Screen<br/>
     - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 

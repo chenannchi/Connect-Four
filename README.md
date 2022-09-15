@@ -20,10 +20,23 @@
 - **Screenshot(s):** 
 
 Home Page in Large Screen
-![screenshot-1](./assets/screenshot-1.png)
+![Home Page in Large Screen](./assets/home_page_screenshot.png)
+
+Name Page in Large Screen
+![Name Page in Large Screen](./assets/name_page_screenshot.png)
 
 Game Page in Large Screen
-![screenshot-2](./assets/screenshot-2.png)
+![Game Page in Large Screen](./assets/game_page_screenshot.png)
+
+Home Page in small Screen
+![Home Page in small Screen](./assets/home_page_small_screenshot.png)
+
+Name Page in small Screen
+![Name Page in small Screen](./assets/name_page_small_screenshot.png)
+
+Game Page in small Screen
+![Game Page in small Screen](./assets/game_page_small_screenshot.png)
+
 
 - **Technologies Used**: HTML, CSS, JS.
 

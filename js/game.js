@@ -135,7 +135,7 @@ function render() {
     colEls.forEach((col)=>{
       col.classList.remove("columnhover")
     })
-    boardEl.hidden = true
+    // boardEl.hidden = true
   } else {
     // hintMsg.textContent = `${winner === 1 ? "Player1" : "Player2"} win!!!!!`
     hintMsg.textContent = `${winner === 1 ? name1 : name2} wins !!!!!`
@@ -150,7 +150,7 @@ function render() {
     colEls.forEach((col)=>{
       col.classList.remove("columnhover")
     })
-    boardEl.hidden = true
+    // boardEl.hidden = true
   }
 
 

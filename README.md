@@ -43,7 +43,11 @@
 <br/>
 
 - **Technologies Used**: 
-  - HTML, CSS, JS.
+  - HTML
+  - CSS
+  - JS
+  - Animate.CSS
+  - BootStrap
 
 <br/>
 

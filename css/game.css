@@ -245,12 +245,11 @@ h2 {
     margin: 60px 0;
   }
 
-  #nameContent1 {
-    font-size: 40px;
-  }
-
-  #nameContent2 {
-    font-size: 40px;
+  #nameContent1, 
+  #nameContent2,
+  #token-msg1,
+  #token-msg2{
+    font-size: 30px;
   }
 
   .btn {

@@ -238,7 +238,7 @@ h2 {
   }
 
   #game-section {
-    flex-direction: row;
+    justify-content: center;
   }
 
   #askToEnterName {

@@ -134,17 +134,14 @@ function render() {
   } else {
     hintMsg.textContent = `Congrats, ${winner === 1 ? name1 : name2} wins !!!!!`
     hintMsg.style.animation = "swing 2s"
-
     confetti.start(1000)
     for(let i = 0;i < winningCombo.length;i++){
       winningCombo[i].style.animation = "heartBeat 2s"
     }
-
     if(playing){
       music.pause()
       winSound.play()
     }
-    
     colEls.forEach((col)=>{
       col.classList.remove("columnhover")
     })
@@ -160,7 +157,6 @@ function handleClick(evt) {
   } else if (winner !== null) {
     return
   }
-
   for(let row = 0;row < 6;row++){
     if(board[placeCol][row] === null){
       board[placeCol][row] = turn

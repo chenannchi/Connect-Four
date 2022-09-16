@@ -217,10 +217,6 @@ h2 {
 }
 
 @media only screen and (min-width: 768px){
-  body{
-    height: 40vh;
-  }
-
   img {
     width: 60px;
     height: 60px;

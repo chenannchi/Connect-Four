@@ -55,9 +55,9 @@
 - **Next Steps**: 
 
   - Let the player choose their own token and theme color.
-  - Let the player enter their name at different page from the game page.
-  - Set a timer for adding the token in certain time.
-  - Add history record, including players' names, time cost to win, date, the count of winning and losing, etc.
+  - Let the players enter their names at different page from the game page.
+  - Set a timer for adding the token within certain time.
+  - Add history records, including players' names, time cost to win, date, the count of winning and losing, etc.
 
 <br/>
 

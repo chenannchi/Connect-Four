@@ -1,6 +1,6 @@
 # Connect-Four
 
-- **Your game’s title**: 
+- **Game’s title**: 
 
   - My game's title is Connect Four. 
 
@@ -22,7 +22,7 @@
 
 <br/>
 
-- **Screenshot(s):** 
+- **Screenshots:** 
   - Home Page in Large Screen<br/>
     - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 
@@ -61,7 +61,7 @@
 
 <br/>
 
-- **credential**:
+- **Credentials**:
 
   - Icons from [ICONS8](https://icons8.com/).
 

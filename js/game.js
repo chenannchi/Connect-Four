@@ -16,7 +16,6 @@ let playing = 0, player1 = chimmy, player2 = shooky, winningCombo = []
 let boardEl = document.querySelector("#game-board")
 let hintMsg = document.querySelector("#hint-msg")
 let squareEls = document.querySelectorAll(".square")
-// let startBtn = document.querySelector("#next-btn")
 let startBtn = document.querySelector("#start-btn")
 let restartBtn = document.querySelector("#restart-btn")
 let homeBtn = document.querySelector("#home-btn")
@@ -44,7 +43,6 @@ name2SubmitBtn.addEventListener("click",function(){
   name2El.hidden = true
   name2SubmitBtn.hidden = true
   document.getElementById("nameContent2").textContent = name2 + ", "
-  // init()
 })
 
 startBtn.addEventListener("click", init)

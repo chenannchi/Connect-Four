@@ -185,13 +185,18 @@ h2 {
 }
 
 #restart-btn:hover,
-#home-btn:hover {
+#home-btn:hover,
+#start-btn:hover {
   background-color: rgba(195, 248, 255, 0.4);
   color: black;
 }
 
 #home-btn {
   background-color: navy;
+}
+
+#start-btn{
+  background-color: #551c83;
 }
 
 #hint-msg {

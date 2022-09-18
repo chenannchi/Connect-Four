@@ -1,6 +1,6 @@
 # Connect-Four
 
-- **Game’s title**: 
+## **Game’s title**: 
 
   - My game's title is Connect Four. 
 
@@ -10,7 +10,7 @@
 
 <br/>
 
-- **Getting Started**: 
+## **Getting Started**: 
 
   - [Press here to play the game!](https://anchi-chen-connect-four.netlify.app/)
   - [Wireframe of the game](https://whimsical.com/connect-four-QJ5WbjE7F7341Jxuo5WuVq)
@@ -22,7 +22,7 @@
 
 <br/>
 
-- **Screenshots:** 
+## **Screenshots:** 
   - Home Page in Large Screen<br/>
     - <img src="./assets/home_page_screenshot.png" alt="drawing" width="600"/>
 
@@ -43,7 +43,7 @@
 
 <br/>
 
-- **Technologies Used**: 
+## **Technologies Used**: 
   - HTML
   - CSS
   - JS
@@ -52,7 +52,7 @@
 
 <br/>
 
-- **Next Steps**: 
+## **Next Steps**: 
 
   - Let the player choose their own token and theme color.
   - Let the players enter their names at different page from the game page.
@@ -61,7 +61,7 @@
 
 <br/>
 
-- **Credentials**:
+## **Credits**:
 
   - Icons from [ICONS8](https://icons8.com/).
 
